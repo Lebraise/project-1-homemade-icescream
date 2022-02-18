@@ -1,0 +1,58 @@
+<section class="gallery">
+    <div class="container">
+        <h1 class="visually-hidden">Gallery</h1>
+        <div class="gallery__wrap">
+            <picture>
+                <source
+                  srcset="./images/desktop/gallery.webp 1x, ./images/desktop/gallery@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/desktop/gallery.jpg 1x, ./images/desktop/gallery@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/gallery-tablet.webp    1x,
+                    ./images/tablet/gallery-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 380px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/gallery-tablet.jpg    1x,
+                    ./images/tablet/gallery-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 380px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/gallery-mobile.webp    1x,
+                    ./images/mobile/gallery-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 379px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/gallery-mobile.jpg    1x,
+                    ./images/mobile/gallery-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 379px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/desktop/gallery.jpg"
+                  alt="gallery"
+                  class="gallery__img"
+                  width="1280"
+                  height="430"              
+                />
+            </picture>
+        </div>
+    </div>
+</section>
