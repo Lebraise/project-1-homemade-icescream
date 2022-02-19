@@ -1,0 +1,12 @@
+.reviews {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  &__card {
+    text-align: center;
+    &-img {
+      margin: auto;
+      padding-bottom: 29px;
+    }
+  }
+}
