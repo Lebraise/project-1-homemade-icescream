@@ -1,21 +1,34 @@
-.header{
-    position: relative;
-    background-color: var(--accent-pink);
-    padding: 6px 20px 20px 20px;
-    &__section{
-        display: flex;
-        margin-bottom: 137px;
-    }
-        &__list{
-        display: none;
-    }
-       &__btn{
-        display: none;
-    }
-   
+.header {
+  position: relative;
+  background-color: #ffb8ca;
+  // padding: 6px 20px 20px 20px;
+  height: 100vh;
+  overflow: hidden;
+  &-container {
+    padding-top: 6px;
+  }
+  &__section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 137px;
+  }
+  &__list {
+    display: none;
+  }
+  &__btn {
+    display: none;
+  }
+  &_menu-btn {
+    display: block;
+    margin-left: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
 }
-.hero{
-    &__tittle{
+.hero {
+  &__tittle {
     font-family: Titan One;
     font-weight: normal;
     font-size: 26px;
@@ -23,33 +36,62 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--light-text-color);
-    &--span{
-        font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: calc(48 / 46);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--text-red);
+    &--span {
+      font-family: Titan One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: calc(48 / 46);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text-red);
     }
-    }
-    &-img__link{
+  }
+  &-wrap {
     position: absolute;
+    z-index: 5;
+  }
+  &-img__link {
     width: 171px;
     height: 410px;
+    position: absolute;
     bottom: 0;
-    
-   
+    right: 32px;
+    z-index: 3;
+  }
+  &__about--link {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 
-    }
-    }
-.hero-wrap__right{
-    display: none;
+    color: var(--text-red);
+  }
 }
-.bio-eco{
-    display: none;
+.hero-wrap__right {
+  display: none;
 }
-.hero-so-tasty__wrap{
-    display: none;
+.bio-eco {
+  display: none;
+}
+.hero-so-tasty__wrap {
+  display: none;
+}
+.bg-ring {
+  position: absolute;
+  width: 346px;
+  height: 346px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+  z-index: 1;
+  top: 76px;
+  left: 35px;
+  @include tab {
+    width: 324px;
+    height: 322px;
+  }
 }
