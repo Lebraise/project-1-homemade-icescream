@@ -1,24 +1,22 @@
 // Utils components
 
-@import "./utils/global";
-@import "./utils/mixins";
-@import "./utils/reset";
-@import "./utils/variables";
+@import './utils/global';
+@import './utils/mixins';
+@import './utils/reset';
+@import './utils/variables';
 
 // Компоненты секций (у каждого разработчика есть своя секция, количество scss файлов зависит от вас, как пример созданы header и hero)
 
 // Компоненты "hero-header" (здесь вы можете подключать scss файлы хедера)
 
-@import "./components/hero-header/header";
-@import "./components/hero-header/hero";
+@import './components/hero-header/header';
+@import './components/hero-header/hero';
 
 // Компоненты "products"
 
-
-
 // Компоненты "about"
 
-
+@import './components/about/about';
 
 // Компоненты "advantages"
 
@@ -26,14 +24,11 @@
 
 // Компоненты "galery"
 
-
-
 // Компоненты "reviews"
-
-
 
 // Компоненты "contacts"
 
 @import "./components/contacts/contacts";
 
 // Компоненты "footer"
+
