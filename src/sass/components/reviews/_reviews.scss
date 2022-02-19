@@ -15,7 +15,6 @@
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 52px;
     padding-top: 43px;
     padding-bottom: 26px;
     background-color: #fafafa;
@@ -30,19 +29,18 @@
       &::before {
         position: absolute;
         content: '';
-        background-image: url('/images/icon.svg#icon-quote');
-        fill: #e1e1e1;
+        background-image: url('../images/icon.svg#icon-quote');
         width: 54px;
         height: 40px;
         display: block;
-        background-position: center;
         background-repeat: no-repeat;
-        top: 28px;
-        left: 61px;
+        margin-top: -15px;
+        margin-left: 4px;
       }
     }
   }
   &__card-info {
+    margin-top: 30px;
     font-family: DM Sans;
     font-style: normal;
     font-weight: 500;
@@ -50,5 +48,15 @@
     line-height: 186%;
     text-align: center;
     color: #000000;
+    &::before {
+      content: '';
+      display: block;
+      background-image: url('/images/icon.svg#icon-Ellipse-5');
+      background-size: 32px 4px;
+      margin: 0 auto 15px;
+      width: 32px;
+      height: 4px;
+      fill: #c7133e;
+    }
   }
 }
