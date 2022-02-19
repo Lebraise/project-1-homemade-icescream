@@ -12,11 +12,16 @@
 @import './components/hero-header/header';
 @import './components/hero-header/hero';
 
+// Компоненты "Бургер-меню"
+
+@import "./components/hero-header/mobile-menu";
+
 // Компоненты "products"
 
 // Компоненты "about"
 
 @import './components/about/about';
+@import "./components/about/about-modal";
 
 // Компоненты "advantages"
 
@@ -34,3 +39,6 @@
 
 @import './components/footer/footer';
 
+// Компоненты "модального окна (buy now)@
+
+@import "./components/hero-header/modal";
