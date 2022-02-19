@@ -1,0 +1,19 @@
+.reviews {
+  display: flex;
+  justify-content: center;
+  &__comment::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-image: url('/src/images/icon.svg#icon-ice-cream-2');
+    background-repeat: no-repeat;
+    background-size: 54px auto;
+    position: absolute;
+    background: var(--accent-color);
+    border-radius: 2px;
+    left: 0px;
+  }
+}
