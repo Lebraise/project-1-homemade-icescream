@@ -86,3 +86,34 @@
     transform: translateY(-50%);
     transition: fill var(--transition);
 }
+
+.form-input {
+    font-family: "Titan One", sans-serif;
+    font-style: normal;
+    padding-left: 42px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: border var(--transition);
+    &:hover, &:focus {
+        outline: none;
+        border: 1px solid var(--main-color);
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+    &:hover+.input-icon, &:focus+.input-icon {
+        fill: var(--main-color);
+    }
+}
+
+.input-text {
+    font-family: "Titan One", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+}
