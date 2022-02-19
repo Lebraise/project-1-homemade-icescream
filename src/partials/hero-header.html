@@ -1,8 +1,9 @@
 <header class="header">
-    <section class="header__section">
-        <nav class="header__nav">
-            <a href="/"><img src="./images/desktop/logo-desk@x1.png" width="199" height="50" alt="icecream"></a>
-            <ul class="header__list">
+    <div class="container header-container">
+        <nav class="header__section">
+            <a class="header__logo" href="/"><img src="./images/desktop/logo-desk@x1.png" width="199" height="50"
+                    alt="icecream"></a>
+            <ul class="header__list list">
                 <li class="header__item">
                     <a class="header__link" href="">home</a>
                 </li>
@@ -19,213 +20,80 @@
                     <a class="header__link" href="">Contact</a>
                 </li>
             </ul>
+            <button class="btn header__btn" type="button" data-modal-open>
+                Buy now
+            </button>
+            <button type="button" class="header_menu-btn  mob-menu-btn_open" data-menu-open>
+                <svg class="header__menu-icon" width="20" height="12">
+                    <use href="./images/icon.svg#icon-burger"></use>
+                </svg>
+            </button>
         </nav>
-        <button class="btn" type="button" data-modal-open>
-            Buy now
-        </button>
-        <button type="button" class="header_menu-btn mob-menu-btn mob-menu-btn_open" data-menu-open>
-          <svg class="header__menu-icon" width="20" height="12">
-            <use href="./images/icon.svg#icon-burger"></use>
-          </svg>
-        </button>
-    </section>
-    <section class="hero">
-        <div class="tittle-block">
-            <div class="tittle-block__left">
-                <h1 class="hero__tittle">
-                    ice cream <br>
-                    made with <br>
-                    <span>passion</span>
-                </h1>
-                <button class="hero__about--btn btn">
-                    <a href="#name">Products</a>
-                </button>
-                <button class="hero__about--btn btn">
-                    <a href="">How it’s made?</a>
-                </button>
+        <section class="hero">
+            <div class="hero-wrap">
+                <div class="hero-wrap__left">
+                    <h1 class="hero__tittle">
+                        ice cream <br>
+                        made with <br>
+                        <span class="hero__tittle--span">passion</span>
+                    </h1>
+                    <button class="hero__about--btn btn">
+                        <a class="hero__about--link" href="#name">Products</a>
+                    </button>
+                    <button class="hero__about--btn btn">
+                        <a href="">How it’s made?</a>
+                    </button>
+                </div>
+                <div class="hero-wrap__right">
+                    <ul class="points-of-sale">
+                        <li>16<p>cafes</p>
+                        </li>
+                        <li>23<p>food trucks</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="tittle-block__right">
-                <ul class="points-of-sale">
-                    <li>16<p>cafes</p>
-                    </li>
-                    <li>23<p>food trucks</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="bio-eco">
-            <picture>
+            <div class="bio-eco">
+                <picture>
                     <source srcset="./images/desktop/hero-milk-desk@x1.png 1x, 
-                        ./images/desktop/hero-milk-desk@x2.png 2x" media="(min-width: 1280px)">
+                                ./images/desktop/hero-milk-desk@x2.png 2x" media="(min-width: 1280px)">
                     <source srcset="./images/tablet/hero-milk-tab@x1.png 1x, 
-                        ./images/tablet/hero-milk-tab@x2.png 2x" media="(min-width: 768px)">
+                                ./images/tablet/hero-milk-tab@x2.png 2x" media="(min-width: 768px)">
                     <source srcset="./images/tablet/hero-milk-tab@x1.png 1x, 
-                        ./images/tablet/hero-milk-tab@x2.png 2x" media="(min-width: 480px)">
-                
+                                ./images/tablet/hero-milk-tab@x2.png 2x" media="(min-width: 480px)">
+        
                     <img class="bio-eco__img" width="124" height="126" src="./images/desktop/hero-milk-desk@x1.png" alt="milk">
-                </picture> 
+                </picture>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime libero mollitia aliquid tempora illum
-                assumenda.</p>
+                    assumenda.</p>
                 <button type="button" class="bio-eco__btn"></button>
-        </div>
-        <div class="hero-img__wrap">
-            <picture>
-                <source srcset="./images/desktop/ice-cream-desk@x1.png 1x, 
-                    ./images/desktop/ice-cream-desk@x2.png 2x" media="(min-width: 1280px)">
-                <source srcset="./images/tablet/ice-cream-tab@x1.png 1x, 
-                    ./images/tablet/ice-cream-tab@x2.png 2x" media="(min-width: 768px)">
-                <source srcset="./images/mobile/ice-cream-mob@x1.png 1x, 
-                    ./images/mobile/ice-cream-mob@x2.png 2x" media="(min-width: 480px)">
-                <img class="bio-eco__img" width="143" height="336" src="./images/desktop/ice-cream-desk@x1.png" alt="big icecream">
-            </picture>
-            
-        </div>
-        <div class="hero-so-tasty__wrap">
-            <picture id="name">
-                <source srcset="./images/desktop/tasty-girl-desk@x1.png 1x, 
-                                ./images/desktop/tasty-girl-desk@x2.png 2x" media="(min-width: 1280px)">
-                <source srcset="./images/tablet/tasty-girl-tab@x1.png 1x, 
-                                ./images/tablet/tasty-girl-tab@x2.png 2x" media="(min-width: 768px)">
-                <source srcset="./images/tablet/tasty-girl-tab@x1.png 1x, 
-                                ./images/tablet/tasty-girl-tab@x2.png 2x" media="(min-width: 480px)">
-                <img class="hero-so-tasty" width="168" height="133" src="./images/desktop/tasty-girl-desk@x1.png" alt="girl with icecream">
-            </picture>
-        </div>
-    </section>
-                  <!-- Мобильное меню - Бургер -->
-    <div class="mob-menu is-hidden" data-menu>
-      <button type="button" class="mob-menu-btn" data-menu-close>
-        <svg class="mob-menu__icon" width="14" height="14">
-          <use href="./images/icon.svg#icon-close"></use>
-        </svg>
-      </button>
-      <div class="container__mob-menu">
-        <button type="button" class="btn mob-menu__button">
-          <span>Buy now</span
-          ><svg class="mob-menu__button-icon" width="8px" height="10px">
-            <use href="./images/icon.svg#icon-bnt-arrow"></use>
-          </svg>
-        </button>
-        <nav class="mob-nav">
-          <ul class="mob-nav__list list">
-            <li class="mob-nav__item current">
-              <a href="#home" class="mob-nav__link">Home</a>
-            </li>
-            <li class="mob-nav__item">
-              <a href="#about" class="mob-nav__link">About us</a>
-            </li>
-            <li class="mob-nav__item">
-              <a href="#how" class="mob-nav__link">How it’s made?</a>
-            </li>
-            <li class="mob-nav__item">
-              <a href="#prod" class="mob-nav__link">Our products</a>
-            </li>
-            <li class="mob-nav__item">
-              <a href="#contact" class="mob-nav__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="tittle-block__right">
-        <ul class="points-of-sale">
-          <li>
-            16
-            <p>cafes</p>
-          </li>
-          <li>
-            23
-            <p>food trucks</p>
-          </li>
-        </ul>
-      </div>
+            </div>
+            <a class="hero-img__link">
+                <picture>
+                    <source srcset="./images/desktop/ice-cream-desk@x1.png 1x, 
+                            ./images/desktop/ice-cream-desk@x2.png 2x" media="(min-width: 1280px)">
+                    <source srcset="./images/tablet/ice-cream-tab@x1.png 1x, 
+                            ./images/tablet/ice-cream-tab@x2.png 2x" media="(min-width: 768px)">
+                    <source srcset="./images/mobile/ice-cream-mob@x1.png 1x, 
+                            ./images/mobile/ice-cream-mob@x2.png 2x" media="(min-width: 480px)">
+                    <img class="bio-eco__img" src="./images/desktop/ice-cream-desk@x1.png" alt="big icecream">
+                </picture>
+        
+            </a>
+            <div class="hero-so-tasty__wrap">
+                <picture id="name">
+                    <source srcset="./images/desktop/tasty-girl-desk@x1.png 1x, 
+                          ./images/desktop/tasty-girl-desk@x2.png 2x" media="(min-width: 1280px)">
+                    <source srcset="./images/tablet/tasty-girl-tab@x1.png 1x, 
+                          ./images/tablet/tasty-girl-tab@x2.png 2x" media="(min-width: 768px)">
+                    <source srcset="./images/tablet/tasty-girl-tab@x1.png 1x, 
+                          ./images/tablet/tasty-girl-tab@x2.png 2x" media="(min-width: 480px)">
+                    <img class="hero-so-tasty" width="168" height="133" src="./images/desktop/tasty-girl-desk@x1.png"
+                        alt="girl with icecream">
+                </picture>
+            </div>
+            <div class="bg-ring">
+            </div>
+        </section>
     </div>
-    <div class="bio-eco">
-      <picture>
-        <source
-          srcset="./images/desktop/hero-milk-desk@x1.png jpg 1x, 
-                        ./images/desktop/hero-milk-desk@x2.png 2x"
-          media="(min-width: 1280px)"
-        />
-        <source
-          srcset="./images/tablet/hero-milk-tab@x1.png 1x, ./images/tablet/hero-milk-tab@x2.png 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="./images/tablet/hero-milk-tab@x1.png 1x, ./images/tablet/hero-milk-tab@x2.png 2x"
-          media="(min-width: 480px)"
-        />
-
-        <img
-          class="bio-eco__img"
-          width="124"
-          height="126"
-          src="./images/desktop/hero-milk-desk@x1.png"
-          alt="milk"
-        />
-      </picture>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime libero mollitia aliquid
-        tempora illum assumenda.
-      </p>
-      <button type="button" class="bio-eco__btn"></button>
-    </div>
-    <div class="hero-img__wrap">
-      <picture>
-        <source
-          srcset="
-            ./images/desktop/ice-cream-desk@x1.png 1x,
-            ./images/desktop/ice-cream-desk@x2.png 2x
-          "
-          media="(min-width: 1280px)"
-        />
-        <source
-          srcset="./images/tablet/ice-cream-tab@x1.png 1x, ./images/tablet/ice-cream-tab@x2.png 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="./images/mobile/ice-cream-mob@x1.png 1x, ./images/mobile/ice-cream-mob@x2.png 2x"
-          media="(min-width: 480px)"
-        />
-        <img
-          class="bio-eco__img"
-          width="143"
-          height="336"
-          src="./images/desktop/ice-cream-desk@x1.png"
-          alt="big icecream"
-        />
-      </picture>
-    </div>
-    <div class="hero-so-tasty__wrap">
-      <picture>
-        <source
-          srcset="
-            ./images/desktop/tasty-girl-desk@x1.png 1x,
-            ./images/desktop/tasty-girl-desk@x2.png 2x
-          "
-          media="(min-width: 1280px)"
-        />
-        <source
-          srcset="
-            ./images/tablet/tasty-girl-tab@x1.png 1x,
-            ./images/tablet/tasty-girl-tab@x2.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/tablet/tasty-girl-tab@x1.png 1x,
-            ./images/tablet/tasty-girl-tab@x2.png 2x
-          "
-          media="(min-width: 480px)"
-        />
-        <img
-          class="hero-so-tasty"
-          width="168"
-          height="133"
-          src="./images/desktop/tasty-girl-desk@x1.png"
-          alt="girl with icecream"
-        />
-      </picture>
-    </div>
-  </section>
 </header>

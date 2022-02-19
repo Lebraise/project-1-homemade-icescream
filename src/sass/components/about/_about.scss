@@ -16,6 +16,20 @@
     background-position: left 83%, right 83%;
     background-size: 45%, 45%;
   }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/bg-milk-mob@x2_01.png),
+      url(../images/mobile/bg-milk-mob@x2_02.png);
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/desktop/bg-milk-desk@x1_01.png),
+      url(../images/desktop/bg-milk-desk@x1_02.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/bg-milk-desk@x2_01.png),
+        url(../images/desktop/bg-milk-desk@x2_02.png);
+    }
+  }
 }
 
 .about__pre-title {
