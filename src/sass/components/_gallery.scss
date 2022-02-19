@@ -1,9 +1,110 @@
-.gallery .container {
-    padding: 0;
+.gallery {
+  background: linear-gradient(to bottom, rgba(255, 245, 246, 1) 40%, rgba(255, 255, 255, 1) 42%);
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 245, 246, 1) 103px,
+      rgba(255, 255, 255, 1) 107px
+    );
+  }
+  @media screen and (min-width: 1280px) {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 245, 246, 1) 168px,
+      rgba(255, 255, 255, 1) 174px
+    );
+  }
+}
+
+.gallery__wrap {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(7, (1 / 7));
+  grid-template-rows: repeat(9, (1 / 9));
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(7, 85px);
+    gap: 4.5px;
+    padding: 0 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: repeat(7, 139px);
+    gap: 6px;
+
+    padding: 0 20px;
+  }
+}
+
+.gallery__thumb {
+  overflow: hidden;
+
+  border-radius: 14%;
+
+  transition: transform 200ms linear;
+  &:hover {
+    transform: scale(1.2);
+  }
+  &:first-child {
+    grid-row-start: 4;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  &:nth-child(2) {
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  &:nth-child(3) {
+    grid-row-start: 6;
+    grid-row-end: 9;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  &:nth-child(4) {
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  &:nth-child(5) {
+    grid-row-start: 7;
+    grid-row-end: 10;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  &:nth-child(6) {
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 6;
+  }
+  &:nth-child(7) {
+    grid-row-start: 6;
+    grid-row-end: 9;
+    grid-column-start: 5;
+    grid-column-end: 6;
+  }
+  &:nth-child(8) {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 6;
+    grid-column-end: 7;
+  }
+  &:nth-child(9) {
+    grid-row-start: 5;
+    grid-row-end: 8;
+    grid-column-start: 6;
+    grid-column-end: 7;
+  }
+  &:last-child {
+    grid-row-start: 4;
+    grid-row-end: 7;
+    grid-column-start: 7;
+    grid-column-end: 8;
+  }
 }
 
 .gallery__img {
-    @media screen and (max-width: 767px) {
-        width: 100%;
-    }
+  width: 100%;
 }
