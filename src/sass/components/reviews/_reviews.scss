@@ -2,11 +2,53 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 86px;
   &__card {
     text-align: center;
     &-img {
       margin: auto;
       padding-bottom: 29px;
     }
+  }
+  &__block {
+    max-width: 926px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 52px;
+    padding-top: 43px;
+    padding-bottom: 26px;
+    background-color: #fafafa;
+    &-text {
+      // font-family: DM Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 2.55;
+      text-align: center;
+      color: #000000;
+      &::before {
+        position: absolute;
+        content: '';
+        background-image: url('/images/icon.svg#icon-quote');
+        fill: #e1e1e1;
+        width: 54px;
+        height: 40px;
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 28px;
+        left: 61px;
+      }
+    }
+  }
+  &__card-info {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+    text-align: center;
+    color: #000000;
   }
 }
