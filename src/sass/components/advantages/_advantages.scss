@@ -1,24 +1,45 @@
+.advantages {
+  background-color: #fff5f6;
+  padding-top: 39px;
+  padding-bottom: 97px;
+
+  @include tab {
+    padding-top: 66px;
+    padding-bottom: 140px;
+  }
+
+  @include desk {
+    padding-top: 39px;
+    padding-bottom: 139px;
+  }
+}
+
 .advantages-list {
   display: flex;
   flex-direction: column;
   margin-bottom: -38px;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     flex-direction: row;
     margin-right: -60px;
+  }
+
+  @include desk {
+    margin-right: -100px;
   }
 
   &__item {
     max-width: 250px;
     margin-bottom: 38px;
 
-    @media screen and (min-width: 768px) {
+    @include tab {
       max-width: 180px;
       margin-right: 60px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include desk {
       max-width: 260px;
+      margin-right: 100px;
     }
   }
 
@@ -26,27 +47,45 @@
     display: block;
     margin-bottom: 25px;
 
-    font-family: Titan One;
+    font-family: 'Titan One', sans-serif;
 
     font-size: 36px;
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: #d41443;
+    color: var(--text-red);
 
-    @media screen and (min-width: 768px) {
+    @include tab {
+      font-size: 48px;
+
+      margin-bottom: 13px;
+    }
+
+    @include desk {
+      font-size: 58px;
+      line-height: 1.13;
+
       margin-bottom: 15px;
     }
   }
 
   &__text {
-    font-family: DM Sans;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 12px;
-    line-height: 1.7;
+    line-height: 1.74;
 
     color: #000000;
+
+    @include tab {
+      font-size: 14px;
+    }
+
+    @include desk {
+      font-size: 16px;
+      line-height: 1.76;
+      letter-spacing: 0.02em;
+    }
   }
 }
 
@@ -56,29 +95,92 @@
   height: 50px;
   margin-bottom: 16px;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     margin-bottom: 36px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @include desk {
     margin-bottom: 40px;
   }
 }
 
 .advantages-list__item:nth-child(1)::before {
-  //   background-image: url(../images/advantages-icon-1.png);
+  background-image: url(../images/mobile/milk-bucket-mob@x1.png);
   background-repeat: no-repeat;
   background-position: left;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/milk-bucket-mob@x2.png);
+  }
+
+  @include tab {
+    background-image: url(../images/tablet/milk-bucket-tab@x1.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/milk-bucket-tab@x2.png);
+    }
+  }
+
+  @include desk {
+    background-image: url(../images/desktop/milk-bucket-desk@x1.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/milk-bucket-desk@x2.png);
+    }
+  }
 }
 
 .advantages-list__item:nth-child(2)::before {
-  //   background-image: url(../images/advantages-icon-2.png);
+  background-image: url(../images/mobile/apple-bucket-mob@x1.png);
   background-repeat: no-repeat;
   background-position: left;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/apple-bucket-mob@x2.png);
+  }
+
+  @include tab {
+    background-image: url(../images/tablet/apple-bucket-tab@x1.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/apple-bucket-tab@x2.png);
+    }
+  }
+
+  @include desk {
+    background-image: url(../images/desktop/apple-bucket-desk@x1.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/apple-bucket-desk@x2.png);
+    }
+  }
 }
 
 .advantages-list__item:nth-child(3)::before {
-  //   background-image: url(../images/advantages-icon-3.png);
+  background-image: url(../images/mobile/heart-stick-mob@x1.png);
   background-repeat: no-repeat;
   background-position: left;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/heart-stick-mob@x2.png);
+  }
+
+  @include tab {
+    background-image: url(../images/tablet/heart-stick-tab@x1.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/heart-stick-tab@x2.png);
+    }
+  }
+
+  @include desk {
+    background-image: url(../images/desktop/heart-stick-desk@x1.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/heart-stick-desk@x2.png);
+    }
+  }
 }
