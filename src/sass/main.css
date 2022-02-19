@@ -91,6 +91,21 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+}
+
+.reviews__comment {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+}
+
+.reviews__comment-name {
+  font-size: 14px;
+  line-height: 186%;
+  text-align: center;
 }
 
 .reviews__comment::before {

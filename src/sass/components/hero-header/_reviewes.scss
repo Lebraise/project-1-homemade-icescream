@@ -1,6 +1,19 @@
 .reviews {
   display: flex;
   justify-content: center;
+  text-align: center;
+  &__comment {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+    text-align: center;
+    &-name {
+      font-size: 14px;
+      line-height: 186%;
+      text-align: center;
+    }
+  }
   &__comment::before {
     position: absolute;
     left: 0;
