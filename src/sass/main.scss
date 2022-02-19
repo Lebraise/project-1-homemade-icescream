@@ -14,14 +14,14 @@
 
 // Компоненты "Бургер-меню"
 
-@import "./components/hero-header/mobile-menu";
+@import './components/hero-header/mobile-menu';
 
 // Компоненты "products"
-
+@import './components/products/products';
 // Компоненты "about"
 
 @import './components/about/about';
-@import "./components/about/about-modal";
+@import './components/about/about-modal';
 
 // Компоненты "advantages"
 
@@ -43,4 +43,4 @@
 
 // Компоненты "модального окна (buy now)@
 
-@import "./components/hero-header/modal";
+@import './components/hero-header/modal';
