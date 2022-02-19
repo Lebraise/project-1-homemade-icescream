@@ -46,7 +46,33 @@
   &__button {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 32px;
+    margin-bottom: 19px;
+    width: 209px;
+    height: 44px;
+
+    font-family: inherit;
+    border-radius: 22px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc (21 / 16);
+    text-align: center;
+    cursor: pointer;
+
+    background-color: #ffffff;
+    color: #d41443;
+
+    transition: background-color var(--animation-time) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
+  &__button-icon {
+    margin-left: 27px;
+    position: relative;
+    bottom: -1px;
   }
 }
 
@@ -79,4 +105,9 @@
   &__item:nth-child(2n + 1) {
     border: 1px solid var(--mob-menu-border-color);
   }
+}
+
+.current {
+  color: var(--text-red);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
