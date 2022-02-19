@@ -1,33 +1,74 @@
 body {
-    font-family: 'DM sans', sans-serif; 
-    background-color: #FFFFFF;
-    line-height: 1.5;
-    margin: 0 auto;
+  font-family: 'DM sans', sans-serif;
+  background-color: #ffffff;
+  line-height: 1.5;
+  margin: 0 auto;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
-    width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        padding: 0 34px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 300px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding: 0 115px;
+  }
+}
+
+.btn {
+  font-family: inherit;
+  border-radius: 22px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc (21 / 16);
+  text-align: center;
+  cursor: pointer;
+  width: 176px;
+  height: 44px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff;
+  color: #d41443;
+
+  transition: background-color var(--transition);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  &-red {
+    background-color: #d41443;
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+      background-color: #c7133e;
     }
-    @media screen and (min-width: 1280px) {
-        width: 1280px;
-        padding: 0 115px;
-    }
+  }
 }
