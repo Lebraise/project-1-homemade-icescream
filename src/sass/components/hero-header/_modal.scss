@@ -3,7 +3,7 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(206, 73, 73, 0.2);
+    background: rgba(233, 13, 123, 0.2);
 }
 
 .is-hidden {
@@ -51,19 +51,16 @@
     right: 8px;
     transition: fill var(--transition);
     // &:hover, &:focus {
-    //     fill: var(--m);
-    // }
-    & {
-        fill: #FFFFFF;
-    }
+    //     fill: var(--light);
+    // }    
 }
 
 .modal__title {
-    font-family: Titan One;
+    font-family: "Titan One", sans-serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: center;
