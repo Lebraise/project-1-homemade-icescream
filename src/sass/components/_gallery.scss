@@ -39,7 +39,7 @@
 
   border-radius: 14%;
 
-  transition: transform 200ms linear;
+  transition: var(--transition);
   &:hover {
     transform: scale(1.2);
   }
