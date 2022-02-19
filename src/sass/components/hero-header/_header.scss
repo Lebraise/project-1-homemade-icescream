@@ -1,0 +1,55 @@
+.header{
+    position: relative;
+    background-color: var(--accent-pink);
+    padding: 6px 20px 20px 20px;
+    &__section{
+        display: flex;
+        margin-bottom: 137px;
+    }
+        &__list{
+        display: none;
+    }
+       &__btn{
+        display: none;
+    }
+   
+}
+.hero{
+    &__tittle{
+    font-family: Titan One;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: calc(30 / 26);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--light-text-color);
+    &--span{
+        font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: calc(48 / 46);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-red);
+    }
+    }
+    &-img__link{
+    position: absolute;
+    width: 171px;
+    height: 410px;
+    bottom: 0;
+    
+   
+
+    }
+    }
+.hero-wrap__right{
+    display: none;
+}
+.bio-eco{
+    display: none;
+}
+.hero-so-tasty__wrap{
+    display: none;
+}
