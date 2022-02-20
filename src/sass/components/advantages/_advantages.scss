@@ -17,29 +17,32 @@
 .advantages-list {
   display: flex;
   flex-direction: column;
-  margin-bottom: -38px;
 
   @include tab {
     flex-direction: row;
-    margin-right: -60px;
-  }
-
-  @include desk {
-    margin-right: -100px;
   }
 
   &__item {
     max-width: 250px;
-    margin-bottom: 38px;
 
     @include tab {
       max-width: 180px;
+    }
+
+    @include desk {
+      max-width: 260px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 38px;
+
+    @include tab {
       margin-right: 60px;
       margin-bottom: 0;
     }
 
     @include desk {
-      max-width: 260px;
       margin-right: 100px;
     }
   }
