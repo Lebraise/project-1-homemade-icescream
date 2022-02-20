@@ -3,6 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 128px;
+  transition-duration: 1000ms !important;
   &__card {
     text-align: center;
     &-img {
@@ -13,54 +14,61 @@
     }
   }
   &__block {
-    max-width: 926px;
-    height: 138px;
+    width: 280px;
+    height: 308px;
     position: relative;
     margin-right: auto;
     margin-left: auto;
     margin-top: 29px;
     margin-bottom: 30px;
+    padding-left: 57px;
+    padding-right: 66px;
     padding-top: 43px;
     padding-bottom: 26px;
     background-color: #fafafa;
+
     @media screen and (min-width: 768px) {
+      width: 620px;
+      height: 164px;
       margin-top: 19px;
       margin-bottom: 24px;
+      padding-left: 80px;
+      padding-right: 80px;
       padding-top: 47px;
       padding-bottom: 34px;
     }
     @media screen and (min-width: 1280px) {
+      width: 926px;
+      height: 138px;
       margin-top: 15px;
       margin-bottom: 15px;
+      padding-left: 89px;
+      padding-right: 89px;
       padding-bottom: 39px;
     }
     &-text {
-      // font-family: DM Sans;
       font-style: normal;
       font-weight: 500;
       font-size: 12px;
       line-height: 2.55;
       text-align: center;
       color: #000000;
-      &::after {
-        content: '';
-        width: 100%;
-        height: 1px;
-        position: absolute;
-        border: 1px solid #e1e1e1;
-        left: 0px;
-      }
+      text-decoration: underline 1px solid #e1e1e1;
+      text-underline-offset: 8px;
       &::before {
         position: absolute;
         content: '';
-        background-image: url('/images/icon.svg#icon-quote');
+        background-image: url('/images/for-all/quote.svg');
         width: 54px;
         height: 40px;
         display: block;
+        background-size: 54px 40px;
         background-repeat: no-repeat;
         background-size: contain;
-        margin-top: -15px;
-        margin-left: 4px;
+        background-position: 50%;
+        // margin-top: -15px;
+        // margin-left: 4px;
+        // z-index: -1;
       }
       @media screen and (min-width: 768px) {
         font-size: 12px;
@@ -87,7 +95,7 @@
     &::before {
       content: '';
       display: block;
-      background-image: url('/images/icon.svg#icon-Ellipse-5');
+      background-image: url('/images/for-all/3ellipse.svg');
       background-size: 32px 4px;
       margin: 0 auto 15px;
       width: 32px;
@@ -107,33 +115,26 @@
 .swiper {
   width: 100%;
   height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.swiper-slide {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  &-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: block;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .swiper-pagination {
@@ -144,12 +145,20 @@
   @media screen and (min-width: 1280px) {
     margin-bottom: 132px;
   }
-}
-
-.swiper-pagination-bullet-active {
-  background-image: url('/images/icon.svg#icon-home');
-  background-size: cover;
-  border-radius: unset;
-  width: 20px;
-  height: 20px;
+  &-bullet {
+    width: 12px;
+    height: 12px;
+    &:not(:last-child) {
+      margin-right: 14px !important;
+    }
+    &-active::before {
+      content: '';
+      display: block;
+      background-image: url('/images/for-all/home.svg');
+      background-size: 12px 12px;
+      width: 12px;
+      height: 12px;
+      background-color: #fff;
+    }
+  }
 }
