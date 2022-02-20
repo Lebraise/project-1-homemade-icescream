@@ -2,7 +2,6 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 128px;
   transition-duration: 1000ms !important;
   &__card {
     text-align: center;
@@ -26,6 +25,7 @@
     padding-top: 43px;
     padding-bottom: 26px;
     background-color: #fafafa;
+    z-index: -2;
 
     @media screen and (min-width: 768px) {
       width: 620px;
@@ -66,9 +66,17 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 50%;
-        // margin-top: -15px;
-        // margin-left: 4px;
-        // z-index: -1;
+        top: 28px;
+        left: 61px;
+        z-index: -1;
+        @media screen and (min-width: 768px) {
+          top: 30px;
+          left: 40px;
+        }
+        @media screen and (min-width: 1280px) {
+          top: 32px;
+          left: 50px;
+        }
       }
       @media screen and (min-width: 768px) {
         font-size: 12px;
@@ -90,6 +98,9 @@
     color: #000000;
     margin-bottom: 30px;
     @media screen and (min-width: 768px) {
+      margin-bottom: 35px;
+    }
+    @media screen and (min-width: 1280px) {
       margin-bottom: 35px;
     }
     &::before {
@@ -138,6 +149,7 @@
 }
 
 .swiper-pagination {
+  position: relative;
   margin-bottom: 86px;
   @media screen and (min-width: 768px) {
     margin-bottom: 119px;
