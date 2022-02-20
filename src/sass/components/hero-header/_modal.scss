@@ -5,6 +5,7 @@
     width: 100vw;
     height: 100vh;
     background: rgba(233, 13, 123, 0.2);
+    z-index: 998;
 }
 
 .is-hidden {
@@ -28,7 +29,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--transition);
-    z-index: 1;
+    z-index: 999;
     @include mob {
         width: 450px;
         min-height: 610px;
@@ -45,16 +46,12 @@
     height: 30px;
     border-radius: 50%;
     background: #D41443;
-    // border: 1px solid rgba(0, 0, 0, 0.1);
     border: none;
     box-sizing: border-box;
     position: absolute;
     top: 8px;
     right: 8px;
     transition: fill var(--transition);
-    // &:hover, &:focus {
-    //     fill: var(--light);
-    // }    
 }
 
 .modal__title {
@@ -70,6 +67,7 @@
     margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
+    
 }
 
 .form-field {
@@ -85,7 +83,16 @@
 .input-icon {
     display: block;
     position: absolute;
-    left: 12px;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill var(--transition);
+}
+
+.input-img {
+    display: block;
+    position: absolute;
+    left: 30px;
     top: 50%;
     transform: translateY(-50%);
     transition: fill var(--transition);
@@ -103,16 +110,16 @@
     transition: border var(--transition);
     &:hover, &:focus {
         outline: none;
-        border: 1px solid var(--main-color);
+        // border: 1px solid var(--main-color);
         box-sizing: border-box;
         border-radius: 50px;
     }
-    &:hover+.input-icon, &:focus+.input-icon {
-        fill: var(--main-color);
-    }
+    // &:hover+.input-icon, &:focus+.input-icon {
+    //     fill: var(--main-color);
+    // }
 }
 
-.form-input__order {
+.update-cart {
     font-family: "Titan One", sans-serif;
     font-style: normal;
     padding-left: 42px;
@@ -120,18 +127,38 @@
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
-    border-radius: 50px;
     transition: border var(--transition);
     text-align: center;
-    &:hover, &:focus {
-        outline: none;
-        border: 1px solid var(--main-color);
-        box-sizing: border-box;
-        border-radius: 50px;
+    // &:hover, 
+    // &:focus {
+    //     outline: none;
+    //     border: 1px solid var(--text-red);
+    //     box-sizing: border-box;
+    // }
+    // &:hover+.input-icon, &:focus+.input-icon {
+    //     fill: var(--main-color);
+    // }
+}
+
+.quantity-arrow-minus {
+    font-family: "Titan One", sans-serif;
+    font-style: normal;
+    outline: none;
+    border: 1px solid var(--text-red);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    background-color: #FFFFFF;
     }
-    &:hover+.input-icon, &:focus+.input-icon {
-        fill: var(--main-color);
-    }
+    
+.quantity-arrow-plus {
+    font-family: "Titan One", sans-serif;
+    font-style: normal;
+    outline: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    background-color: #FFFFFF;
 }
 
 .input-text {
@@ -157,11 +184,3 @@
     display: flex;
     justify-content: center;
 }
-
-input::-webkit-inner-spin-button {
-    //   -webkit-appearance: none;
-        display: block;
-        width: 10px;
-        opacity: 1; 
-        // background-color: red;
-                }
