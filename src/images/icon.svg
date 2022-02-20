@@ -65,5 +65,8 @@
         <symbol id="icon-vector-name" viewBox="0 0 32 32">
             <path d="M16 16c4.418 0 8-3.582 8-8s-3.582-8-8-8v0c-4.418 0-8 3.582-8 8s3.582 8 8 8v0zM16 20c-5.339 0-16 2.68-16 8v2c0 1.099 0.901 2 2 2h28c1.099 0 2-0.901 2-2v-2c0-5.32-10.661-8-16-8z"></path>
         </symbol>
+        <symbol id="icon-on-contacts" viewBox="0 0 32 32">
+            <path fill="none" stroke="#ffffff" style="stroke: var(--color1, #ffffff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M8.371 3.2l14.17 12.8-14.17 12.8"></path>
+        </symbol>
     </defs>
 </svg>
