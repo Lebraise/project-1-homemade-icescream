@@ -11,13 +11,17 @@
 
 @import './components/hero-header/header';
 @import './components/hero-header/hero';
+@import "./components/hero-header/modal-backdrop";
+@import "./components/hero-header/modal-order";
 
 // Компоненты "Бургер-меню"
 
 @import './components/hero-header/mobile-menu';
 
 // Компоненты "products"
+
 @import './components/products/products';
+
 // Компоненты "about"
 
 @import './components/about/about';

@@ -1,0 +1,45 @@
+.modal-order {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal__input-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.update-cart {
+    font-family: "Titan One", sans-serif;
+    font-style: normal;
+    padding-left: 42px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    transition: border var(--transition);
+    text-align: center;
+}
+
+.quantity-arrow-minus {
+    font-family: "Titan One", sans-serif;
+    font-style: normal;
+    outline: none;
+    border: 1px solid var(--text-red);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    background-color: #FFFFFF;
+    }
+    
+.quantity-arrow-plus {
+    font-family: "Titan One", sans-serif;
+    font-style: normal;
+    outline: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    background-color: #FFFFFF;
+}
