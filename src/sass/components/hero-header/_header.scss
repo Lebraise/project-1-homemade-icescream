@@ -40,7 +40,7 @@
     }
   }
   &__link {
-    font-family: DM Sans;
+    font-family: "DM Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -76,7 +76,7 @@
     }
   }
   &__tittle {
-    font-family: Titan One;
+    font-family: "Titan One", sans-serif;
     font-weight: normal;
     font-size: 26px;
     line-height: calc(30 / 26);
@@ -84,7 +84,7 @@
     text-transform: uppercase;
     color: var(--light-text-color);
     &--span {
-      font-family: Titan One;
+      font-family: "Titan One", sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 48px;
@@ -107,7 +107,7 @@
     z-index: 3;
   }
   &__about--link {
-    font-family: DM Sans;
+    font-family: "DM Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 8px;
