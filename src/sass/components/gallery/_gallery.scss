@@ -1,17 +1,21 @@
 .gallery {
-  background: linear-gradient(to bottom, rgba(255, 245, 246, 1) 40%, rgba(255, 255, 255, 1) 42%);
+  background: linear-gradient(
+    to bottom,
+    var(--gallery-gradient-color-from) 40%,
+    var(--gallery-gradient-color-to) 42%
+  );
   @media screen and (min-width: 768px) {
     background: linear-gradient(
       to bottom,
-      rgba(255, 245, 246, 1) 103px,
-      rgba(255, 255, 255, 1) 107px
+      var(--gallery-gradient-color-from) 103px,
+      var(--gallery-gradient-color-to) 107px
     );
   }
   @media screen and (min-width: 1280px) {
     background: linear-gradient(
       to bottom,
-      rgba(255, 245, 246, 1) 168px,
-      rgba(255, 255, 255, 1) 174px
+      var(--gallery-gradient-color-from) 168px,
+      var(--gallery-gradient-color-to) 174px
     );
   }
 }
@@ -42,6 +46,7 @@
   transition: var(--transition);
   &:hover {
     transform: scale(1.2);
+    z-index: 999;
   }
   &:first-child {
     grid-row-start: 4;
