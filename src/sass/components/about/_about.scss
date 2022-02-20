@@ -81,6 +81,12 @@ br {
   }
 }
 
+.about__button--width {
+  width: 176px;
+  height: 44px;
+  display: inline-block;
+}
+
 .about__wrapper {
   @include tab {
     display: flex;
