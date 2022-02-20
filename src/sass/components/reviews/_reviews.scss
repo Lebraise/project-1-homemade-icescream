@@ -35,7 +35,6 @@
       padding-bottom: 39px;
     }
     &-text {
-      // font-family: DM Sans;
       font-style: normal;
       font-weight: 500;
       font-size: 12px;
@@ -53,7 +52,7 @@
       &::before {
         position: absolute;
         content: '';
-        background-image: url('/images/icon.svg#icon-quote');
+        background-image: url('/images/for-all/quote@x1.png');
         width: 54px;
         height: 40px;
         display: block;
@@ -87,7 +86,7 @@
     &::before {
       content: '';
       display: block;
-      background-image: url('/images/icon.svg#icon-Ellipse-5');
+      background-image: url('/images/for-all/3ellipse@x1.png');
       background-size: 32px 4px;
       margin: 0 auto 15px;
       width: 32px;
@@ -147,7 +146,7 @@
 }
 
 .swiper-pagination-bullet-active {
-  background-image: url('/images/icon.svg#icon-home');
+  background-image: url('/images/for-all/home@x1.png');
   background-size: cover;
   border-radius: unset;
   width: 20px;
