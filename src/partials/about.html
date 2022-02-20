@@ -1,0 +1,59 @@
+<section class="about" id="about">
+    <div class="container">
+        <p class="about__pre-title">tradition and love</p>
+        <h2 class="about__title">how it’s <br> made?</h2>
+        <div class="about__wrapper">
+        <picture class="about__picture"> 
+            <source srcset="./images/mobile/cow-mob@x1.png 1x, 
+            ./images/mobile/cow-mob@x2.png 2x" media="(max-width: 767px)" type="image/png">
+
+            <source srcset="./images/tablet/cow-tab@x1.png 1x, 
+            ./images/tablet/cow-tab@x2.png 2x " media="(min-width: 768px)" type="image/png">
+
+            <source srcset="./images/desktop/cow-desk@x1.png 1x, 
+            ./images/desktop/cow-desk@x2.png 2x" media="(min-width: 1280px)" type="image/png">
+            
+            <img class="about__img" src="./images/mobile/cow-mob@x1.png" alt="Cow and milc" min-width="280" height="280" loading="lazy">
+        </picture>
+    
+        <article class="about__thumb">
+            <p class="about__text--black">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
+            Maecenas eleifend erat at justo fringilla.</p>
+            <p class="about__text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
+            Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p>
+            <p class="about__text"> Aliquam erat volutpat. Aenean accumsan.</p>
+            <button type="button" class="btn" about-modal-open>
+                Read more 
+                <svg class="about__btn-icon" width="12" height="12">
+                    <use href="./images/icon.svg#icon-on-button"></use>
+                </svg>
+            </button>
+        </article>
+        </div>
+    </div>
+</section>
+
+<!-- Modal window -->
+<div about-modal class="container backdrop is-hidden">
+    <div class="about-modal">
+        <button about-modal-close type="button" class="about__modal-button">
+            <svg class="modal__icon" width="14" height="14">
+                <use href="./images/icon.svg#icon-close"></use>
+            </svg>
+        </button>
+        <div class="about-modal__wrapper" >
+            <h3 class="about__modal-title">Eco Milc</h3>
+                <p class="about__modal-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde eligendi commodi ipsam animi numquam vitae,
+                    saepe voluptates quod praesentium quibusdam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p  class="about__modal-text">Tempore
+                    inventore, id non ratione voluptatem architecto quae quam sequi hic! Voluptate, quas. Explicabo expedita modi
+                    vel omnis laudantium quasi repellendus error. </p>
+
+                <button type="button" class="btn about__modal-btn" >
+                    Buy now
+                    <svg class="about__btn-icon" width="12" height="12">
+                        <use href="./images/icon.svg#icon-on-button"></use>
+                    </svg>
+        </div>
+    </div>
+</div>

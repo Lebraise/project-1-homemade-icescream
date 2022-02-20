@@ -1,39 +1,48 @@
 // Utils components
 
-@import "./utils/global";
-@import "./utils/mixins";
-@import "./utils/reset";
-@import "./utils/variables";
+@import './utils/global';
+@import './utils/mixins';
+@import './utils/reset';
+@import './utils/variables';
 
 // Компоненты секций (у каждого разработчика есть своя секция, количество scss файлов зависит от вас, как пример созданы header и hero)
 
 // Компоненты "hero-header" (здесь вы можете подключать scss файлы хедера)
 
-@import "./components/hero-header/header";
-@import "./components/hero-header/hero";
+@import './components/hero-header/header';
+@import './components/hero-header/hero';
+
+// Компоненты "Бургер-меню"
+
+@import './components/hero-header/mobile-menu';
 
 // Компоненты "products"
-
-
-
+@import './components/products/products';
 // Компоненты "about"
 
-
+@import './components/about/about';
+@import './components/about/about-modal';
 
 // Компоненты "advantages"
 
-
+@import './components/advantages/advantages';
 
 // Компоненты "galery"
-@import "./components/gallery";
 
+@import "./components/gallery";
 
 // Компоненты "reviews"
 
-
+@import "./components/reviews/reviews";
 
 // Компоненты "contacts"
 
-
+@import './components/contacts/contacts';
 
 // Компоненты "footer"
+
+@import './components/footer/footer';
+
+// Компоненты "модального окна (buy now)@
+
+@import './components/hero-header/modal';

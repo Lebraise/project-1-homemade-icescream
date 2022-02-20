@@ -1,26 +1,37 @@
-.list {
-    list-style: none;
+html {  
+  box-sizing: border-box;
 }
 
-p, a, h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+li {
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: inherit;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

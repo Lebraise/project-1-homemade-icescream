@@ -1,0 +1,122 @@
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(233, 13, 123, 0.2);
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.backdrop.is-hidden .modal {
+    transform: scale(0.5);
+}
+
+.modal {
+    width: 300px;
+    min-height: 609px;
+    background: #D41443;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform var(--transition);
+    @include mob {
+        width: 450px;
+        min-height: 610px;
+    }
+    @include desk {
+        width: 528px;
+        min-height: 610px;
+    }
+
+}
+
+.modal__button--close {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #D41443;
+    // border: 1px solid rgba(0, 0, 0, 0.1);
+    border: none;
+    box-sizing: border-box;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    transition: fill var(--transition);
+    // &:hover, &:focus {
+    //     fill: var(--light);
+    // }    
+}
+
+.modal__title {
+    font-family: "Titan One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.form-field {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.input-bar {
+    position: relative;
+    display: flex;
+}
+
+.input-icon {
+    display: block;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill var(--transition);
+}
+
+.form-input {
+    font-family: "Titan One", sans-serif;
+    font-style: normal;
+    padding-left: 42px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: border var(--transition);
+    &:hover, &:focus {
+        outline: none;
+        border: 1px solid var(--main-color);
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+    &:hover+.input-icon, &:focus+.input-icon {
+        fill: var(--main-color);
+    }
+}
+
+.input-text {
+    font-family: "Titan One", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+}
