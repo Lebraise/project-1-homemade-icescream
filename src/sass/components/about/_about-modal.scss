@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(154, 14, 49, 0.2);
+  background-color: var(--about-backdrop-bg);
   width: 100%;
   height: 100%;
   z-index: 10;
@@ -23,7 +23,7 @@
   transform: translate(-50%, -50%);
   padding: 30px;
 
-  background-color: #e03761;
+  background-color: var(--about-modal-bg);
   border-radius: 4px;
 
   transition: transform var(--transition), opacity var(--transition);
@@ -64,7 +64,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #f8d9dc;
+  color: var(--about-modal-title);
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
@@ -99,7 +99,7 @@
 }
 
 .about__modal-text {
-  color: #ffffff;
+  color: var(--light-text-color);
   font-family: DM Sans;
   font-size: 12px;
   line-height: calc(14 / 12);
