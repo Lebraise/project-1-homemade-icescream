@@ -35,38 +35,44 @@
         <!-- Блок навигации хедера -->
         <nav class="header__section">
             <!-- Лого -->
-            <a class="header__logo" href="/"><img src="./images/desktop/logo-desk@x1.png" width="199" height="50"
-                    alt="icecream"></a>
-            <ul class="header__list list">
-                <li class="header__item">
-                    <a class="header__link" href="">Home</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__link" href="">About us</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__link" href="">How it’s made?</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__link" href="">Our products</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__link" href="">Contact</a>
-                </li>
-            </ul>
-            <!-- Кнопка вызова мобильного меню -->
-            <button type="button" class="header__menu-btn  mob-menu-btn__open" data-menu-open>
-                <svg class="header__menu-icon" width="20" height="12">
-                    <use href="./images/icon.svg#icon-burger"></use>
-                </svg>
-            </button>
-            <!-- Кнопка вызова модального окна -->
-            <button class="btn header__btn" type="button" data-modal-open>
-                Buy now
-                <svg class="about__btn-icon" width="12" height="12">
-                    <use href="./images/icon.svg#icon-on-button"></use>
-                </svg>
-            </button>
+            <div class="nav__wrap">
+                <div class="header__btn--wrap">
+                    <a class="header__logo" href="/"><img src="./images/desktop/logo-desk@x1.png" width="199" height="50"
+                            alt="icecream"></a>
+                    <ul class="header__list list">
+                        <li class="header__item">
+                            <a class="header__link" href="">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="">About us</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="">How it’s made?</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="">Our products</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Кнопка вызова мобильного меню -->
+                <div class="header__btn--flex">
+                    <button type="button" class="header__menu-btn  mob-menu-btn__open" data-menu-open>
+                        <svg class="header__menu-icon" width="20" height="12">
+                            <use href="./images/icon.svg#icon-burger"></use>
+                        </svg>
+                    </button>
+                    <!-- Кнопка вызова модального окна -->
+                    <button class="btn header__btn" type="button" data-modal-open>
+                        Buy now
+                        <svg class="about__btn-icon" width="12" height="12">
+                            <use href="./images/icon.svg#icon-on-button"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </nav>
         <!-- Секция героя -->
         <section class="hero">

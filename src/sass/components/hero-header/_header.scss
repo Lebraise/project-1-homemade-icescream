@@ -155,16 +155,7 @@
     }
   }
 
-  &-img__link {
-    width: 236px;
-    height: 557px;  
-    position: absolute;
-    bottom: 0;
-    right: 32px;
-    z-index: 3;
-    bottom: 0;
-    right: 450px;
-  }
+
   &__about--link {
     font-family: "DM Sans", sans-serif;
     font-style: normal;
@@ -178,6 +169,26 @@
     color: var(--text-red);
   }
 }
+
+.hero-img__link {
+  bottom: 0;
+  @include tab {
+    position: absolute;
+    width: 143px;
+    height: 336px;
+    right: 247px;
+  }
+  @include desk {
+    width: 236px;
+    height: 557px;  
+    position: absolute;
+    right: 32px;
+    z-index: 3;
+    bottom: 0;
+    right: 450px;
+  }
+}
+
 .hero-wrap__right {
   display: none;
   @include tab {
@@ -187,19 +198,37 @@
 
 .bio-eco-left__img {
   position: absolute;
-  display: block;
   bottom: 45px;
   left: 77px;
   display: flex;
+  @include tab {
+    bottom: 28px;
+    left: 34px;
+  }
+  @include desk {
+    bottom: 45px;
+    left: 77px;
+  }
 }
 
 .bio-eco__right {
-display: flex;
-align-items: flex-start;
-flex-direction: column;
-position: absolute;
-bottom: 56px;
-left: 295px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    bottom: 56px;
+    left: 295px;
+    @include tab {
+      bottom: 34px;
+      left: 154px;
+    }
+    @include desk {
+      position: absolute;
+      bottom: 56px;
+      left: 295px;
+    }
+
+
 }
 
 .bio-eco__text {
@@ -212,6 +241,20 @@ left: 295px;
   width: 200px;
   height: 78px;
   color: #FFFFFF;
+  @include tab {
+    font-size: 8px;
+    line-height: 1.50;
+    width: 114px;
+    height: 48px;
+    color: #FFFFFF;
+  }
+  @include desk {
+    font-size: 14px;
+    line-height: 1.40;
+    width: 200px;
+    height: 78px;
+    color: #FFFFFF;
+  }
 }
 
 .bio-eco__btn {
@@ -384,13 +427,36 @@ left: 295px;
 .container-bg {
   background-image: url(/images/desktop/ellipse-desk@x1.png);
   background-repeat: no-repeat;
-  background-size: 531px 544px;
-  background-position: bottom 69px right 274px;
-  height: 665px;
-  overflow: hidden;
-  padding-top: 38px;
+  height: 502px;
   position: relative;
-  // @include tablet {
+  @include tab {
+    background-size: 324px 322px;
+    background-position: bottom 46px right 137px;
+    height: 399px;
+    overflow: hidden;
+    padding-top: 38px;
+    position: relative;
+  }
+  @include desk {
+    background-size: 531px 544px;
+    background-position: bottom 69px right 274px;
+    height: 665px;
+    overflow: hidden;
+    padding-top: 38px;
+    position: relative;
+  }
+}
 
-  // }
+.nav__wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__btn--flex {
+  display: flex;
+}
+
+.header__btn--wrap {
+  display: flex;
 }
