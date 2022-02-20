@@ -75,6 +75,16 @@
 }
 
 .footer-social__link {
+  width: 34px;
+  height: 34px;
+  background-color: #fea5bb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: #d41443;
@@ -91,6 +101,9 @@
   display: flex;
   justify-content: end;
   margin-bottom: 65px;
+  @include desk {
+    margin-bottom: 0px;
+  }
 }
 
 .footer-contacts__title {
