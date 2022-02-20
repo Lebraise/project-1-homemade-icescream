@@ -22,6 +22,8 @@
   color: #ffa5ba;
   max-width: 232px;
   margin-bottom: 43px;
+  display: flex;
+  flex-direction: column;
 
   @include tab {
     font-weight: 400;
@@ -49,12 +51,14 @@
   text-align: left;
   color: #d41443;
   max-width: 200px;
+  padding-top: 17px;
 
   @include tab {
     font-weight: 400;
     font-size: 48px;
     line-height: calc(55 / 48);
     max-width: 340px;
+    padding-top: 16px;
   }
 
   @include desk {
@@ -62,6 +66,7 @@
     font-size: 58px;
     line-height: calc(66 / 58);
     max-width: 474px;
+    padding-top: 15px;
   }
 }
 
