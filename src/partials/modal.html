@@ -8,7 +8,7 @@
             </svg>
         </button>
         <p class="modal__title">Leave your data, the operator will contact you soon</p>
-        <form action="">
+        <form action="#">
         <div class="form-field">
             <!-- Инпут с строкой имени -->
             <label class="input-text" for="user-name">Name</label>
@@ -55,43 +55,74 @@
                     <use href="images/icon.svg#icon-vector-mail"></use>
                 </svg>
             </div>
+            <!-- Order title -->
             <p class="modal__title">Choose your order</p>
-            <label class="input-text" for="user-mail">Ice Cream</label>
-            <div class="input-bar">
-                <input 
-                    type="text"
-                    name="user-mail"
-                    class="form-input"
-                    id="user-mail"
-                    minlength="2"
-                    required
-                >
-                <img class="input-icon" src="./images/mobile/ice-cream-products-mob@x1.png" alt="nice" width="30" height="50">
+            <div class="modal__input-flex">
+                <div class="modal__input-bar">
+                    <!-- Input for Ice cream -->
+                    <label class="input-text" for="user-mail">Ice Cream</label>
+                    <div class="input-bar">
+                        <input 
+                            type="number"
+                            name="Ice cream"
+                            min="0"
+                            class="form-input__order"
+                            id="user-mail"
+                            minlength="2"
+                            required
+                        >
+                        <img class="input-icon" src="./images/mobile/ice-cream-products-mob@x1.png" alt="nice" width="30" height="50">
+                    </div>
+                    <!-- Input for Ice coffee -->
+                    <label class="input-text" for="user-mail">Ice coffe</label>
+                    <div class="input-bar">
+                        <input 
+                            type="number"
+                            name="Ice__coffee"
+                            min="0"
+                            class="form-input__order"
+                            id="user-mail"
+                            minlength="2"
+                            required
+                        >
+                        <img class="input-icon" src="./images/mobile/ice-coffee-products-mob@x1.png" alt="nice" width="30" height="50">
+                    </div>
+                    <!-- Input for Milkshake -->
+                    <label class="input-text"  for="user-mail">Milkshake</label>
+                    <div class="input-bar">
+                        <input 
+                            type="number"
+                            name="Milkshake"
+                            min="0"
+                            class="form-input__order"
+                            id="user-mail"
+                            minlength="2"
+                            required
+                        >
+                        <img class="input-icon" src="./images/mobile/milkshake-products-mob@x1.png" alt="nice" width="30" height="50">
+                    </div>
+                </div>
+                <div class="modal__img">
+                    <picture>
+                        <source srcset="./images/desktop/tasty-girl-desk@x1.png 1x, 
+                            ./images/desktop/tasty-girl-desk@x2.png 2x" media="(min-width: 1280px)">
+                        <source srcset="./images/tablet/tasty-girl-tab@x1.png 1x, 
+                            ./images/tablet/tasty-girl-tab@x2.png 2x" media="(min-width: 768px)">
+                        <source srcset="./images/tablet/tasty-girl-tab@x1.png 1x, 
+                            ./images/tablet/tasty-girl-tab@x2.png 2x" media="(min-width: 480px)">
+                        <img class="hero-so-tasty" width="168" height="133" src="./images/desktop/tasty-girl-desk@x1.png"
+                            alt="girl with icecream">
+                    </picture>
+                </div>
             </div>
-            <label class="input-text" for="user-mail">Mail</label>
-            <div class="input-bar">
-                <input 
-                    type="text"
-                    name="user-mail"
-                    class="form-input"
-                    id="user-mail"
-                    minlength="2"
-                    required
-                >
-                <img class="input-icon" src="./images/mobile/ice-coffee-products-mob@x1.png" alt="nice" width="30" height="50">
-            </div>
-            <label class="input-text" for="user-mail">Mail</label>
-            <div class="input-bar">
-                <input 
-                    type="text"
-                    name="user-mail"
-                    class="form-input"
-                    id="user-mail"
-                    minlength="2"
-                    required
-                >
-                <img class="input-icon" src="./images/mobile/milkshake-products-mob@x1.png" alt="nice" width="30" height="50">
+            <div class="modal-order">
+                <button type="button" class="btn modal-order__btn" data-modal-open>
+                    <span>ORDER</span>
+                    <svg class="mob-menu__button-icon" width="8px" height="10px">
+                    <use href="./images/icon.svg#icon-bnt-arrow"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
-</div>
+</div>    
