@@ -6,10 +6,19 @@
   &__logo {
     @include desk {
       margin-right: 110px;
+      margin-left: -31px;
     }
+  }
+  &__item:hover &__link,
+  &__item:focus &__link {
+    color: var(--text-red);
   }
   &-container {
     padding-top: 6px;
+    position: relative;
+    @include tab {
+      padding: 38px 34px 0 34px;
+    }
   }
   &__section {
     display: flex;
@@ -17,23 +26,32 @@
     margin-bottom: 137px;
     @include tab {
       justify-content: center;
+      margin-bottom: 15px;
     }
     @include desk {
       align-items: center;
       justify-content: center;
+      margin-right: 110px;
     }
   }
   &__list {
     display: none;
     @include desk {
       display: flex;
+      position: relative;
+      z-index: 5;
+      margin-right: 110px;
     }
   }
 
   &__btn {
+    width: 160px;
+    height: 44px;
     display: none;
     @include tab {
       display: block;
+      position: relative;
+      z-index: 2;
     }
     @include desk {
       margin-left: auto;
@@ -60,6 +78,8 @@
     @include tab {
       margin-left: auto;
       margin-right: 30px;
+      position: relative;
+      z-index: 2;
     }
     @include desk {
       display: none;
@@ -70,7 +90,9 @@
   &__about {
     &--wrap {
       display: flex;
+      // margin-bottom: 20px;
     }
+
     &--btn {
       margin-right: 8px;
     }
@@ -83,6 +105,17 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--light-text-color);
+    margin-bottom: 20px;
+    @include tab {
+      font-size: 22px;
+      line-height: calc(25 / 22);
+    }
+    @include desk {
+      font-size: 38px;
+      line-height: calc(44 / 38);
+      margin-bottom: 25px;
+    }
+
     &--span {
       font-family: "Titan One", sans-serif;
       font-style: normal;
@@ -92,12 +125,34 @@
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: var(--text-red);
+      display: block;
+      @include tab {
+        font-size: 34px;
+        line-height: calc(34 / 31);
+      }
+      @include desk {
+        font-size: 58px;
+        line-height: calc(58 / 52);
+      }
     }
   }
   &-wrap {
-    position: absolute;
+    position: relative;
     z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    &__left {
+      width: 218px;
+      @include tab {
+        width: 162px;
+      }
+      @include desk {
+        width: 277px;
+        margin-bottom: 56px;
+      }
+    }
   }
+
   &-img__link {
     width: 171px;
     height: 410px;
@@ -105,6 +160,13 @@
     bottom: 0;
     right: 32px;
     z-index: 3;
+    @include tab {
+      bottom: 0;
+      right: 230px;
+    }
+    @include desk {
+      right: 450px;
+    }
   }
   &__about--link {
     font-family: "DM Sans", sans-serif;
@@ -121,12 +183,68 @@
 }
 .hero-wrap__right {
   display: none;
+  @include tab {
+    display: block;
+  }
 }
 .bio-eco {
   display: none;
+  @include tab {
+    display: flex;
+    position: relative;
+    z-index: 7;
+  }
+  &__left {
+    @include desk {
+      margin-right: 30px;
+    }
+  }
+  &__right {
+    width: 114px;
+    font-size: 14px;
+    @include desk {
+      width: 200px;
+      height: 78px;
+    }
+  }
+  &__text {
+    font-size: 8px;
+    line-height: 150%;
+    color: #ffffff;
+    padding-top: 43px;
+    @include desk {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+
+  &__btn {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    border: none;
+  }
+  &__icon {
+    display: flex;
+    fill: var(--text-red);
+  }
 }
-.hero-so-tasty__wrap {
-  display: none;
+.hero-so-tasty {
+  @include desk {
+    width: 293px;
+    position: relative;
+    z-index: 5;
+  }
+  &__wrap {
+    display: none;
+    @include tab {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      bottom: 0;
+      right: 0;
+    }
+  }
 }
 .bg-ring {
   position: absolute;
@@ -140,8 +258,62 @@
   @include tab {
     width: 324px;
     height: 322px;
+    top: 31px;
+    right: 120px;
+    left: auto;
+  }
+  @include desk {
+    width: 538px;
+    height: 538px;
+    right: 267px;
   }
 }
-.container {
-  outline: 1px solid purple;
+// .container {
+//   outline: 1px solid purple;
+// }
+.points-of-sale {
+  display: flex;
+  flex-direction: column;
+  & li {
+    font-family: Titan One;
+    font-size: 28px;
+    line-height: calc(32 / 28);
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: var(--text-red);
+    position: relative;
+    @include desk {
+      font-size: 46px;
+      line-height: calc(53 / 46);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+    &::after {
+      content: '';
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: var(--light-text-color);
+      position: absolute;
+      top: -2px;
+      right: -6px;
+      z-index: -1;
+      @include desk {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    & p {
+      font-family: DM Sans;
+      font-size: 8px;
+      line-height: calc(10 / 8);
+      color: var(--light-text-color);
+      @include desk {
+        font-size: 14px;
+        line-height: calc(18 / 14);
+      }
+    }
+  }
 }
