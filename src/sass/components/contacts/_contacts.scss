@@ -10,10 +10,10 @@
   // padding-top: 84px;
   // padding-bottom: 20px;
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @include tab {
     // padding-top: 78px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     background-position: left 83%, right 83%;
     background-size: 45%, 45%;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@
   //     url(../images/mobile/bg-pink-mob@x2_02.png);
   // }
 
-  @media screen and (min-width: 1280px) {
+  @include desk {
     background-image: url(../images/desktop/bg-pink-desk@x1_01.png),
       url(../images/desktop/bg-pink-desk@x1_02.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -60,14 +60,14 @@
   padding: 0 50px;
   margin-bottom: 54px;
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @include tab {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: 81px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -82,23 +82,36 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   margin-top: -84px;
-  &:not(:last-child) {
-    margin-bottom: 104px;
+  @include mob {
+    &:not(:last-child) {
+      margin-bottom: 104px;
+    }
   }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+
+  @include tab {
     margin-top: -78px;
     padding: 50px 32px;
     // height: 544px;
     width: calc(100% / 3 - 20px);
     margin-left: 20px;
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     margin-top: -102px;
     padding: 51px 44px 62px 43px;
     height: 572px;
     width: calc(100% / 3 - 30px);
     margin-left: 30px;
+    margin-bottom: 86px;
   }
+}
+.contacts-shadow:hover,
+.contacts-shadow:focus {
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .contacts__title-cafe {
   width: 73px;
@@ -114,11 +127,11 @@
   margin-bottom: 25px;
   color: #ffffff;
   border-radius: 6px;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @include tab {
     margin-bottom: 30px;
     font-size: 16px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     margin-bottom: 32px;
     font-size: 16px;
   }
@@ -149,10 +162,10 @@
   letter-spacing: 0.04em;
   color: #000000;
   // padding-top: 32px;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @include tab {
     font-size: 14px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     font-size: 16px;
   }
 }
@@ -167,10 +180,10 @@
   color: #907e82;
   //   width: 243px;
   padding-top: 10px;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @include tab {
     font-size: 14px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     font-size: 16px;
   }
 }
@@ -183,10 +196,10 @@
   line-height: 186%;
   color: #ffa5ba;
   margin-bottom: 15px;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @include tab {
     font-size: 14px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     font-size: 16px;
   }
 }
@@ -204,10 +217,10 @@
   font-size: 12px;
   line-height: 1.83;
   color: #907e82;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @include tab {
     font-size: 14px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     font-size: 16px;
   }
 }
@@ -223,11 +236,11 @@
   // height: 459px;
   //   width: 243px;
   //   text-align: center;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @include tab {
     margin-bottom: 30px;
     padding-bottom: 30px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     margin-bottom: 32px;
     padding-bottom: 32px;
   }
@@ -236,10 +249,10 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @include tab {
     display: flex;
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     display: flex;
   }
 }
@@ -262,12 +275,12 @@
   left: 50%;
   transform: translate(-50%, 0);
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @include tab {
     width: 191px;
     margin-right: 15px;
     margin-bottom: 0px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     width: 198px;
     margin-right: 15px;
     margin-bottom: 0px;
@@ -295,10 +308,10 @@
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @include tab {
     width: 174px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     width: 198px;
   }
   &:hover,
