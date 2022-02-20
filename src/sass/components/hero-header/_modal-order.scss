@@ -32,6 +32,13 @@
     border-bottom-left-radius: 20px;
     border: none;
     background-color: #FFFFFF;
+    &:hover, &:focus {
+        outline: none;
+        // border: 1px solid var(--text-red);
+        box-sizing: border-box;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
     }
     
 .quantity-arrow-plus {
@@ -42,4 +49,11 @@
     border-bottom-right-radius: 20px;
     border: none;
     background-color: #FFFFFF;
+    &:hover, &:focus {
+        outline: none;
+        // border: 1px solid var(--text-red);
+        box-sizing: border-box;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
 }

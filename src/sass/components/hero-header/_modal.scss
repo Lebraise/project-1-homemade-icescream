@@ -18,7 +18,6 @@
         width: 528px;
         min-height: 610px;
     }
-
 }
 
 .modal__button--close {
@@ -90,7 +89,7 @@
     transition: border var(--transition);
     &:hover, &:focus {
         outline: none;
-        // border: 1px solid var(--main-color);
+        border: 1px solid var(--text-red);
         box-sizing: border-box;
         border-radius: 50px;
     }
