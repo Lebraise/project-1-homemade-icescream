@@ -1,6 +1,6 @@
 body {
   font-family: 'DM sans', sans-serif;
-  background-color: #ffffff;
+  background-color: var(--light-text-color);
   line-height: 1.5;
   margin: 0 auto;
 }
@@ -41,7 +41,7 @@ body {
   border: none;
   font-weight: 700;
   font-size: 16px;
-  line-height: (21 / 16);
+  line-height: calc(21 / 16);
   text-align: center;
   cursor: pointer;
   width: 176px;
@@ -52,19 +52,19 @@ body {
   align-items: center;
   justify-content: center;
 
-  background-color: #ffffff;
-  color: #d41443;
+  background-color: var(--light-text-color);
+  color: var(--text-red);
 
   transition: background-color var(--transition);
 
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: var(--btn-active-bg-color);
   }
 
   &-red {
-    background-color: #d41443;
-    color: #ffffff;
+    background-color: var(--text-red);
+    color: var(--light-text-color);
 
     &:hover,
     &:focus {
