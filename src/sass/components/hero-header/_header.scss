@@ -1,29 +1,29 @@
 .header {
   position: relative;
   background-color: #ffb8ca;
-  height: 100vh;
+  // height: 100vh;
   overflow: hidden;
   &__logo {
     @include desk {
       margin-right: 110px;
-      margin-left: -31px;
+      margin-left: -69px;
     }
   }
   &__item:hover &__link,
   &__item:focus &__link {
     color: var(--text-red);
   }
-  &-container {
-    padding-top: 6px;
-    position: relative;
-    @include tab {
-      padding: 38px 34px 0 34px;
-    }
-  }
+  // &-container {
+  //   // padding-top: 6px;
+  //   position: relative;
+  //   // @include tab {
+  //   //   padding: 38px 34px 0 34px;
+  //   // }
+  // }
   &__section {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 137px;
+    // margin-bottom: 137px;
     @include tab {
       justify-content: center;
       margin-bottom: 15px;
@@ -31,7 +31,9 @@
     @include desk {
       align-items: center;
       justify-content: center;
-      margin-right: 110px;
+      // margin-right: 110px;
+      margin-bottom: 74px;
+      // margin-top: 35px;
     }
   }
   &__list {
@@ -40,7 +42,7 @@
       display: flex;
       position: relative;
       z-index: 5;
-      margin-right: 110px;
+      // margin-right: 110px;
     }
   }
 
@@ -154,19 +156,14 @@
   }
 
   &-img__link {
-    width: 171px;
-    height: 410px;
+    width: 236px;
+    height: 557px;  
     position: absolute;
     bottom: 0;
     right: 32px;
     z-index: 3;
-    @include tab {
-      bottom: 0;
-      right: 230px;
-    }
-    @include desk {
-      right: 450px;
-    }
+    bottom: 0;
+    right: 450px;
   }
   &__about--link {
     font-family: "DM Sans", sans-serif;
@@ -187,48 +184,94 @@
     display: block;
   }
 }
-.bio-eco {
-  display: none;
-  @include tab {
-    display: flex;
-    position: relative;
-    z-index: 7;
-  }
-  &__left {
-    @include desk {
-      margin-right: 30px;
-    }
-  }
-  &__right {
-    width: 114px;
-    font-size: 14px;
-    @include desk {
-      width: 200px;
-      height: 78px;
-    }
-  }
-  &__text {
-    font-size: 8px;
-    line-height: 150%;
-    color: #ffffff;
-    padding-top: 43px;
-    @include desk {
-      font-size: 14px;
-      line-height: 140%;
-    }
-  }
 
-  &__btn {
-    width: 18px;
-    height: 18px;
-    border-radius: 9px;
-    border: none;
-  }
-  &__icon {
-    display: flex;
+.bio-eco-left__img {
+  position: absolute;
+  display: block;
+  bottom: 45px;
+  left: 77px;
+  display: flex;
+}
+
+.bio-eco__right {
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+position: absolute;
+bottom: 56px;
+left: 295px;
+}
+
+.bio-eco__text {
+  display: block;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.40;
+  width: 200px;
+  height: 78px;
+  color: #FFFFFF;
+}
+
+.bio-eco__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 20px;
+  & {
     fill: var(--text-red);
   }
 }
+// .bio-eco {
+//   display: none;
+//   @include tab {
+//     display: flex;
+//     // position: relative;
+//     z-index: 7;
+//   }
+//   @include desk {
+//     position: absolute;
+
+//   }
+//   &__left {
+//     @include desk {
+//       margin-right: 30px;
+//     }
+//   }
+//   &__right {
+//     width: 114px;
+//     font-size: 14px;
+//     @include desk {
+//       width: 200px;
+//       height: 78px;
+//     }
+//   }
+//   &__text {
+//     font-size: 8px;
+//     line-height: 150%;
+//     color: #ffffff;
+//     padding-top: 43px;
+//     @include desk {
+//       font-size: 14px;
+//       line-height: 140%;
+//     }
+//   }
+//   &__btn {
+//     width: 18px;
+//     height: 18px;
+//     border-radius: 9px;
+//     border: none;
+//   }
+//   &__icon {
+//     display: flex;
+//     fill: var(--text-red);
+//   }
+// }
 .hero-so-tasty {
   @include desk {
     width: 293px;
@@ -244,30 +287,50 @@
       bottom: 0;
       right: 0;
     }
+    @include desk {
+      width: 293px;
+      height: 232px;
+      right: 109px;
+      bottom: 0;
+    }
   }
 }
-.bg-ring {
-  position: absolute;
-  width: 346px;
-  height: 346px;
-  border-radius: 50%;
-  background-color: #ffa5ba;
-  z-index: 1;
-  top: 76px;
-  left: 35px;
-  @include tab {
-    width: 324px;
-    height: 322px;
-    top: 31px;
-    right: 120px;
-    left: auto;
-  }
-  @include desk {
-    width: 538px;
-    height: 538px;
-    right: 267px;
-  }
-}
+// .bg-ring {
+//   position: absolute;
+//   display: block;
+//   min-width: 346px;
+//   height: 344px;
+//   left: 36px;
+//   top: 83px;
+//   // width: 346px;
+//   // height: 346px;
+//   border-radius: 50%;
+//   background-color: #ffa5ba;
+//   z-index: 1;
+//   // top: 76px;
+//   // left: 35px;
+//   @include tab {
+//     width: 324px;
+//     height: 322px;
+//     left: 307px;
+//     top: 31px;
+//     // width: 324px;
+//     // height: 322px;
+//     // top: 31px;
+//     // right: 120px;
+//     // left: auto;
+//   }
+//   @include desk {
+//     // width: 538px;
+//     // height: 538px;
+//     // right: 267px;
+//     width: 538px;
+//     height: 538px;
+//     left: 475px;
+//     top: 69px;
+
+//   }
+// }
 // .container {
 //   outline: 1px solid purple;
 // }
@@ -316,4 +379,18 @@
       }
     }
   }
+}
+
+.container-bg {
+  background-image: url(/images/desktop/ellipse-desk@x1.png);
+  background-repeat: no-repeat;
+  background-size: 531px 544px;
+  background-position: bottom 69px right 274px;
+  height: 665px;
+  overflow: hidden;
+  padding-top: 38px;
+  position: relative;
+  // @include tablet {
+
+  // }
 }
