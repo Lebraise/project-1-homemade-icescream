@@ -1,7 +1,6 @@
 .header {
   position: relative;
-  background-color: #ffb8ca;
-  // height: 100vh;
+  background-color: var(--product-pink);
   overflow: hidden;
   &__logo {
     @include desk {
@@ -36,8 +35,8 @@
     }
   }
   &__link {
-    font-family: "DM Sans", sans-serif;
-    font-style: normal;
+    // font-family: "DM Sans", sans-serif;
+    // font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: calc(21 / 16);
@@ -48,13 +47,13 @@
   }
   &__menu-btn {
     display: block;
-    margin-left: auto;
+    // margin-left: auto;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
     @include tab {
-      margin-left: auto;
+      // margin-left: auto;
       margin-right: 30px;
       position: relative;
       z-index: 2;
@@ -66,9 +65,9 @@
 }
 
 .header__section {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 137px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 137px;
   @include tab {
     justify-content: center;
     margin-bottom: 17px;
@@ -89,12 +88,12 @@
     &--btn {
       margin-right: 8px;
       &:not(:last-child) {
-      background-color: #D41443;
+        background-color: var(--text-red);
       }
     }
   }
   &__tittle {
-    font-family: "Titan One", sans-serif;
+    font-family: 'Titan One', sans-serif;
     font-weight: normal;
     font-size: 26px;
     line-height: calc(30 / 26);
@@ -113,9 +112,9 @@
     }
 
     &--span {
-      font-family: "Titan One", sans-serif;
-      font-style: normal;
-      font-weight: normal;
+      // font-family: "Titan One", sans-serif;
+      // font-style: normal;
+      // font-weight: normal;
       font-size: 48px;
       line-height: calc(48 / 46);
       letter-spacing: 0.04em;
@@ -149,26 +148,26 @@
     }
   }
   &__products--link {
-    font-family: "DM Sans", sans-serif;
-    font-style: normal;
+    // font-family: "DM Sans", sans-serif;
+    // font-style: normal;
     font-weight: normal;
     font-size: 8px;
     line-height: 10px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #ffffff;
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
+    color: var(--light-text-color);
   }
   &__made--link {
-    font-family: "DM Sans", sans-serif;
-    font-style: normal;
+    // font-family: "DM Sans", sans-serif;
+    // font-style: normal;
     font-weight: normal;
     font-size: 8px;
     line-height: 10px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #D41443;
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
+    color: var(--text-red);
   }
 }
 
@@ -179,29 +178,29 @@
   left: 117px;
   bottom: 0;
   z-index: 3;
-  @include mob {
-    position: absolute;
-    width: 171px;
-    height: 410px;
-    left: 117px;
-    bottom: 0;
-    z-index: 3;
-  }
+  // @include mob {
+  //   // position: absolute;
+  //   // width: 171px;
+  //   // height: 410px;
+  //   // left: 117px;
+  //   bottom: 0;
+  //   z-index: 3;
+  // }
   @include tab {
-    position: absolute;
+    // position: absolute;
     width: 143px;
     height: 336px;
     left: 378px;
-    bottom: 0;
-    z-index: 3;
+    // bottom: 0;
+    // z-index: 3;
   }
   @include desk {
     width: 236px;
-    height: 557px;  
-    position: absolute;
-    right: 32px;
-    z-index: 3;
-    bottom: 0;
+    height: 557px;
+    // position: absolute;
+    // right: 32px;
+    // z-index: 3;
+    // bottom: 0;
     left: 594px;
   }
 }
@@ -225,49 +224,45 @@
   }
   @include desk {
     bottom: 45px;
-    left: 77px;
   }
 }
 
 .bio-eco__right {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    position: absolute;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: absolute;
+  bottom: 56px;
+  left: 295px;
+  @include tab {
+    bottom: 34px;
+    left: 154px;
+  }
+  @include desk {
     bottom: 56px;
     left: 295px;
-    @include tab {
-      bottom: 34px;
-      left: 154px;
-    }
-    @include desk {
-      position: absolute;
-      bottom: 56px;
-      left: 295px;
-    }
-
-
+  }
 }
 
 .bio-eco__text {
   display: none;
   @include tab {
     display: block;
-    font-family: "DM Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
+    // font-family: "DM Sans", sans-serif;
+    // font-style: normal;
+    // font-weight: normal;
     font-size: 8px;
-    line-height: 1.50;
+    line-height: 1.5;
     width: 114px;
     height: 48px;
-    color: #FFFFFF;
+    color: var(--light-text-color);
   }
   @include desk {
     font-size: 14px;
-    line-height: 1.40;
+    line-height: 1.4;
     width: 200px;
     height: 78px;
-    color: #FFFFFF;
+    // color: #FFFFFF;
   }
 }
 
@@ -279,7 +274,7 @@
     justify-content: center;
     width: 26px;
     height: 26px;
-    border-radius: 20px;
+    border-radius: 50%;
     border: none;
     margin-top: 20px;
     & {
@@ -309,7 +304,7 @@
       width: 293px;
       height: 232px;
       right: 109px;
-      bottom: 0;
+      // bottom: 0;
     }
   }
 }
@@ -371,30 +366,30 @@
   padding-top: 6px;
   @media screen and (min-width: 480px) {
     width: 480px;
-    background-size: 324px 322px;
-    background-position: top 83px left 36px;
-    height: 502px;
+    // background-size: 324px 322px;
+    // background-position: top 83px left 36px;
+    // height: 502px;
     overflow: hidden;
-    padding-top: 6px;
-    position: relative;
+    // padding-top: 6px;
+    // position: relative;
   }
   @include tab {
     width: 768px;
-    background-size: 324px 322px;
+    // background-size: 324px 322px;
     background-position: bottom 46px right 137px;
     height: 399px;
-    overflow: hidden;
+    // overflow: hidden;
     padding-top: 38px;
-    position: relative;
+    // position: relative;
   }
   @include desk {
     width: 1280px;
     background-size: 531px 544px;
     background-position: bottom 69px right 274px;
     height: 665px;
-    overflow: hidden;
+    // overflow: hidden;
     padding-top: 38px;
-    position: relative;
+    // position: relative;
   }
 }
 
