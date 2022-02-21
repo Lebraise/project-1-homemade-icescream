@@ -88,6 +88,9 @@
 
     &--btn {
       margin-right: 8px;
+      &:not(:last-child) {
+      background-color: #D41443;
+      }
     }
   }
   &__tittle {
@@ -145,9 +148,7 @@
       }
     }
   }
-
-
-  &__about--link {
+  &__products--link {
     font-family: "DM Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -156,7 +157,18 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: var(--text-red);
+    color: #ffffff;
+  }
+  &__made--link {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #D41443;
   }
 }
 
@@ -357,7 +369,17 @@
   height: 502px;
   position: relative;
   padding-top: 6px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    background-size: 324px 322px;
+    background-position: top 83px left 36px;
+    height: 502px;
+    overflow: hidden;
+    padding-top: 6px;
+    position: relative;
+  }
   @include tab {
+    width: 768px;
     background-size: 324px 322px;
     background-position: bottom 46px right 137px;
     height: 399px;
@@ -366,6 +388,7 @@
     position: relative;
   }
   @include desk {
+    width: 1280px;
     background-size: 531px 544px;
     background-position: bottom 69px right 274px;
     height: 665px;
@@ -379,6 +402,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
 }
 
 .header__btn--flex {
