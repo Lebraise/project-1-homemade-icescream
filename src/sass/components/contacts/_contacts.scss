@@ -4,7 +4,6 @@
     var(--gallery-gradient-color-to) 84px,
     var(--gallery-gradient-color-from) 5%
   );
-  width: 100%;
 
   @include tab {
     background: linear-gradient(
@@ -14,178 +13,110 @@
     );
   }
   @include desk {
-    z-index: 10;
-    background-color: linear-gradient(
-      to bottom,
-      var(--gallery-gradient-color-to) 102px,
-      var(--gallery-gradient-color-from) 5%
-    );
-
-    // background-color: rgb(255, 255, 255);
-    // background-color: linear-gradient(
-    //   180deg,
-    //   rgba(255, 255, 255, 1) 0%,
-    //   rgba(255, 245, 246, 1) 19%,
-    //   rgba(255, 245, 246, 1) 100%
-    // );
-    // background-color: #fff5f6;
-    // background-image: url(../images/desktop/bg-pink-desk@x1_01.png),
-    //   url(../images/desktop/bg-pink-desk@x1_02.png);
-    // background-position: left 90%, right 90%;
-    // background-size: 55%;
-    // background-repeat: no-repeat;
-    // width: 100%;
-  }
-  @include desk {
-    background-image: url(../images/desktop/bg-pink-desk@x1_01.png),
-      url(../images/desktop/bg-pink-desk@x1_02.png);
-    background-position: left 90%, right 90%;
-    background-size: 55%;
-    background-repeat: no-repeat;
-    width: 100%;
-    z-index: 9;
-  }
-
-  @include desk {
-    background-image: url(../images/desktop/bg-pink-desk@x1_01.png),
-      url(../images/desktop/bg-pink-desk@x1_02.png);
+    background: url(../images/desktop/bg-pink-desk@x1_01.png) left 130px no-repeat,
+      url(../images/desktop/bg-pink-desk@x1_02.png) right 130px no-repeat,
+      linear-gradient(
+        to bottom,
+        var(--gallery-gradient-color-to) 100px,
+        var(--gallery-gradient-color-from) 5%
+      );
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/desktop/bg-pink-desk@x2_01.png),
-        url(../images/desktop/bg-pink-desk@x2_02.png);
+      background: url(../images/desktop/bg-pink-desk@x2_01.png) left 130px no-repeat,
+        url(../images/desktop/bg-pink-desk@x2_02.png) right 130px no-repeat,
+        linear-gradient(
+          to bottom,
+          var(--gallery-gradient-color-to) 100px,
+          var(--gallery-gradient-color-from) 5%
+        );
+      background-size: 50%;
     }
   }
 }
-.contacts__title {
-  margin: auto;
-  padding: 0 102px;
-  background-color: #fff5f6;
-  // @media screen and (min-width: 768px) and (max-width: 1279px) {
-  //   margin-top: -78px;
-  // }
-  // @media screen and (min-width: 1280px) {
-  //   padding: 0 102px;
-  // }
-}
-
-// .contacts__container {
-//   background-color: #fff5f6;
-// }
 
 .contacts__list {
-  // display: flex;
-  // flex-wrap: wrap;
-  // margin-left: -30px;
-  // // margin-bottom: -30px;
   display: flex;
   flex-direction: column;
-  padding: 0 50px;
-  margin-bottom: 54px;
-  align-items: center;
+  @media screen and (max-width: 767px) {
+    width: 220px;
+    margin: 0 auto;
+  }
 
   @include tab {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: 81px;
+    flex-direction: row;
+    margin-left: -20px;
+    margin-top: -20px;
   }
   @include desk {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-right: -30px;
-    margin-bottom: 0px;
-    align-items: flex-start;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 .contacts__item {
-  width: 220px;
   padding: 43px 21px 43px 20px;
-  background-color: #ffffff;
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  background-color: var(--light-text-color);
+  box-shadow: 0px 8px 30px var(--contacts-item-shadow-color);
   border-radius: 24px;
-  align-items: center;
-  // margin-top: -84px;
-  &:not(:last-child) {
-    // margin-bottom: 104px;
-    margin-bottom: 20px;
-  }
-
-  @include tab {
-    // margin-top: -78px;
-    padding: 50px 32px;
-    // height: 544px;
-    width: calc(100% / 3 - 20px);
-    margin-left: 20px;
+  transition: box-shadow var(--transition);
+  @media screen and (max-width: 767px) {
     &:not(:last-child) {
-      margin-bottom: 0px;
+      margin-bottom: 20px;
     }
   }
+  @include tab {
+    padding: 50px 32px 50px 31px;
+    flex-basis: calc(100% / 3 - 20px);
+    margin-left: 20px;
+    margin-top: 20px;
+  }
   @include desk {
-    // margin-top: -102px;
     padding: 51px 44px 62px 43px;
-    height: 572px;
-    width: calc(100% / 3 - 30px);
+    flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
-    margin-bottom: 86px;
-    // margin-top: -102px;
+    margin-top: 30px;
+  }
+  &:hover,
+  &:focus {
+    box-shadow: var(--contacts-item-hover-shadow);
   }
 }
-.contacts-shadow:hover,
-.contacts-shadow:focus {
-  box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.contacts__title-cafe {
-  width: 73px;
-  height: 28px;
-  background-color: #f0d1a5;
-  font-family: DM Sans;
-  font-style: normal;
+
+.contacts__title {
+  width: 80px;
+  height: 16px;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.86;
-  text-align: center;
+  line-height: 16px;
   letter-spacing: 0.04em;
+  text-align: center;
   margin-bottom: 25px;
-  color: #ffffff;
+  color: var(--light-text-color);
   border-radius: 6px;
   @include tab {
-    margin-bottom: 30px;
-    font-size: 16px;
-  }
-  @include desk {
+    width: 73px;
+    height: 28px;
+    line-height: 28px;
     margin-bottom: 32px;
-    font-size: 16px;
   }
-}
-.contacts__title-truck {
-  width: 138px;
-  height: 28px;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.86;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  background-color: #c2e297;
-  border-radius: 6px;
-  margin-bottom: 32px;
+  &-cafe {
+    background-color: var(--product-sand);
+  }
+  &-truck {
+    width: 130px;
+    background-color: var(--product-green);
+    @include tab {
+      width: 138px;
+    }
+  }
 }
 
 .contacts__pre-title,
 .schedule__pre-title {
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
   letter-spacing: 0.04em;
-  color: #000000;
-  // padding-top: 32px;
+  color: var(--text-black);
   @include tab {
     font-size: 14px;
   }
@@ -195,52 +126,30 @@
 }
 
 .contacts__after-title {
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.83;
-  // letter-spacing: 0.04em;
-  color: #907e82;
-  //   width: 243px;
-  padding-top: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-gray);
+  margin-top: 10px;
   @include tab {
+    margin-top: 14px;
     font-size: 14px;
   }
   @include desk {
+    margin-top: 10px;
     font-size: 16px;
   }
+}
+
+.schedule__weekday {
+  margin-bottom: 10px;
 }
 
 .schedule__after-title {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
   font-size: 12px;
-  line-height: 186%;
-  color: #ffa5ba;
-  margin-bottom: 15px;
-  @include tab {
-    font-size: 14px;
-  }
-  @include desk {
-    font-size: 16px;
-  }
-}
-// .schedule__item {
-//   :not(:last-child) {
-//     padding-bottom: 15px;
-//   }
-// }
-
-.address__tel,
-.address__mail {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.83;
-  color: #907e82;
+  line-height: 1.86;
+  color: var(--accent-pink);
   @include tab {
     font-size: 14px;
   }
@@ -249,17 +158,27 @@
   }
 }
 
-// .address__item:not(:last-child) {
-//   padding-top: 64px;
-// }
-.contacts-item__wrap {
+.contact-address__tel,
+.contact-address__mail {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-gray);
+  @include tab {
+    font-size: 14px;
+  }
+  @include desk {
+    font-size: 16px;
+  }
+}
+
+.contacts__item-wrap {
   margin-bottom: 25px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #e1e1e1;
-  // width: 243px;
-  // height: 459px;
-  //   width: 243px;
-  //   text-align: center;
+  border-bottom: 1px solid var(--contacts-bottom-color);
+
   @include tab {
     margin-bottom: 30px;
     padding-bottom: 30px;
@@ -269,83 +188,66 @@
     padding-bottom: 32px;
   }
 }
+
 .contacts__btn-list {
-  justify-content: center;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  margin-top: 54px;
   @include tab {
-    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 81px;
   }
   @include desk {
-    display: flex;
+    margin-top: 86px;
   }
 }
-.contacts__btn-item {
-  display: flex;
-}
-.location__btn {
-  font-family: DM Sans;
+.contacts__btn {
+  width: 161px;
+  height: 44px;
+  border-radius: 22px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.31;
-  background: #d41342;
-  color: #fff;
-  border-radius: 22px;
-  width: 161px;
-  height: 44px;
-  margin-bottom: 10px;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
+}
 
-  @include tab {
-    width: 191px;
-    margin-right: 15px;
-    margin-bottom: 0px;
+.location__btn {
+  background: var(--text-red);
+  color: var(--light-text-color);
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
   }
+  @include tab {
+    margin-right: 14.5px;
+    width: 191px;
+  }
+
   @include desk {
     width: 198px;
-    margin-right: 15px;
-    margin-bottom: 0px;
   }
   &:hover,
   &:focus {
-    background-color: var(--mob-menu-border-color);
+    background: var(--text-red);
   }
 }
 .franchise__btn {
-  width: 180px;
-  height: 44px;
-  border: 2px solid #d41443;
-  border-radius: 22px;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-  color: #d41443;
-  background-color: #fff;
-  border: none;
-  width: 161px;
-  height: 44px;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
-  @include tab {
-    width: 174px;
-  }
-  @include desk {
-    width: 198px;
-  }
+  border: 2px solid transparent;
+  color: var(--contacts-btn-color);
+  background-color: var(--light-text-color);
   &:hover,
   &:focus {
     background-color: var(--btn-active-bg-color);
   }
 }
+
 .location__btn-icon {
   fill: currentColor;
-  margin-left: 13px;
+  margin-left: 8px;
+  @include tab {
+    margin-left: 13px;
+  }
 }
 .franchise__btn-icon {
   margin-left: 13px;
