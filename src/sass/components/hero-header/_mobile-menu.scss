@@ -8,20 +8,12 @@
   padding: 0;
   border: none;
   background-color: transparent;
-
-  &__open {
-    position: unset;
-  }
-
-  @include desk {
-    display: none;
-  }
-}
-
-.mob-menu-btn {
   margin-left: auto;
+
   &__open {
-    position: unset;
+    @include desk {
+      display: none;
+    }
   }
 }
 
