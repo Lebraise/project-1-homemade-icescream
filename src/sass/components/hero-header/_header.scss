@@ -156,7 +156,6 @@
     display: flex;
     align-items: center;
     text-align: center;
-
     color: var(--text-red);
   }
 }
@@ -167,12 +166,22 @@
   height: 410px;
   left: 117px;
   bottom: 0;
+  z-index: 3;
+  @include mob {
+    position: absolute;
+    width: 171px;
+    height: 410px;
+    left: 117px;
+    bottom: 0;
+    z-index: 3;
+  }
   @include tab {
     position: absolute;
     width: 143px;
     height: 336px;
     left: 378px;
     bottom: 0;
+    z-index: 3;
   }
   @include desk {
     width: 236px;
@@ -278,9 +287,11 @@
     @include tab {
       display: block;
       position: absolute;
+      width: 168px;
+      height: 133px;
       z-index: 2;
       bottom: 0;
-      right: 0;
+      right: 34px;
     }
     @include desk {
       width: 293px;
@@ -290,45 +301,7 @@
     }
   }
 }
-// .bg-ring {
-//   position: absolute;
-//   display: block;
-//   min-width: 346px;
-//   height: 344px;
-//   left: 36px;
-//   top: 83px;
-//   // width: 346px;
-//   // height: 346px;
-//   border-radius: 50%;
-//   background-color: #ffa5ba;
-//   z-index: 1;
-//   // top: 76px;
-//   // left: 35px;
-//   @include tab {
-//     width: 324px;
-//     height: 322px;
-//     left: 307px;
-//     top: 31px;
-//     // width: 324px;
-//     // height: 322px;
-//     // top: 31px;
-//     // right: 120px;
-//     // left: auto;
-//   }
-//   @include desk {
-//     // width: 538px;
-//     // height: 538px;
-//     // right: 267px;
-//     width: 538px;
-//     height: 538px;
-//     left: 475px;
-//     top: 69px;
 
-//   }
-// }
-// .container {
-//   outline: 1px solid purple;
-// }
 .points-of-sale {
   display: flex;
   flex-direction: column;
@@ -384,9 +357,6 @@
   height: 502px;
   position: relative;
   padding-top: 6px;
-  @include mob {
-    overflow: visible;
-  }
   @include tab {
     background-size: 324px 322px;
     background-position: bottom 46px right 137px;
