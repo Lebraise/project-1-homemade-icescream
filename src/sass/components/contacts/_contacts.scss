@@ -14,36 +14,35 @@
     );
   }
   @include desk {
-    // padding-top: 102px;
+    // background-color: linear-gradient(
+    //   to bottom,
+    //   var(--gallery-gradient-color-to) 102px,
+    //   var(--gallery-gradient-color-from) 5%
+    // );
+
+    // background-color: rgb(255, 255, 255);
+    // background-color: linear-gradient(
+    //   180deg,
+    //   rgba(255, 255, 255, 1) 0%,
+    //   rgba(255, 245, 246, 1) 19%,
+    //   rgba(255, 245, 246, 1) 100%
+    // );
+    background-color: #fff5f6;
+    background-image: url(../images/desktop/bg-pink-desk@x1_01.png),
+      url(../images/desktop/bg-pink-desk@x1_02.png);
+    background-position: left 90%, right 90%;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    width: 100%;
   }
 
-  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //   background-image: url(../images/mobile/bg-pink-mob@x2_01.png),
-  //     url(../images/mobile/bg-pink-mob@x2_02.png);
-  // }
-
   @include desk {
-    display: inline-block;
-    position: relative;
-    background: linear-gradient(
-      to bottom,
-      var(--gallery-gradient-color-to) 102px,
-      var(--gallery-gradient-color-from) 5%
-    );
-    &:before {
-      background-position: left 83%, right 83%;
-      background-size: 50%, 50%;
-      background-repeat: no-repeat;
-      background-image: url(../images/desktop/bg-pink-desk@x1_01.png),
-        url(../images/desktop/bg-pink-desk@x1_02.png);
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/desktop/bg-pink-desk@x2_01.png),
-          url(../images/desktop/bg-pink-desk@x2_02.png);
-      }
+    background-image: url(../images/desktop/bg-pink-desk@x1_01.png),
+      url(../images/desktop/bg-pink-desk@x1_02.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/bg-pink-desk@x2_01.png),
+        url(../images/desktop/bg-pink-desk@x2_02.png);
     }
-
-    // &::after {
-    // }
   }
 }
 .contacts__title {
@@ -98,8 +97,6 @@
     // margin-bottom: 104px;
     margin-bottom: 20px;
   }
-  @include mob {
-  }
 
   @include tab {
     // margin-top: -78px;
@@ -118,6 +115,7 @@
     width: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 86px;
+    margin-top: -102px;
   }
 }
 .contacts-shadow:hover,
