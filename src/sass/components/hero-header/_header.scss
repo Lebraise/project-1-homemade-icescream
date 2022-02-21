@@ -13,36 +13,12 @@
   &__item:focus &__link {
     color: var(--text-red);
   }
-  // &-container {
-  //   // padding-top: 6px;
-  //   position: relative;
-  //   // @include tab {
-  //   //   padding: 38px 34px 0 34px;
-  //   // }
-  // }
-  &__section {
-    display: flex;
-    justify-content: space-between;
-    // margin-bottom: 137px;
-    @include tab {
-      justify-content: center;
-      margin-bottom: 15px;
-    }
-    @include desk {
-      align-items: center;
-      justify-content: center;
-      // margin-right: 110px;
-      margin-bottom: 74px;
-      // margin-top: 35px;
-    }
-  }
   &__list {
     display: none;
     @include desk {
       display: flex;
       position: relative;
       z-index: 5;
-      // margin-right: 110px;
     }
   }
 
@@ -88,11 +64,26 @@
     }
   }
 }
+
+.header__section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 137px;
+  @include tab {
+    justify-content: center;
+    margin-bottom: 17px;
+  }
+  @include desk {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 74px;
+  }
+}
+
 .hero {
   &__about {
     &--wrap {
       display: flex;
-      // margin-bottom: 20px;
     }
 
     &--btn {
@@ -171,12 +162,17 @@
 }
 
 .hero-img__link {
+  position: absolute;
+  width: 171px;
+  height: 410px;
+  left: 117px;
   bottom: 0;
   @include tab {
     position: absolute;
     width: 143px;
     height: 336px;
-    right: 247px;
+    left: 378px;
+    bottom: 0;
   }
   @include desk {
     width: 236px;
@@ -185,7 +181,7 @@
     right: 32px;
     z-index: 3;
     bottom: 0;
-    right: 450px;
+    left: 594px;
   }
 }
 
@@ -197,11 +193,12 @@
 }
 
 .bio-eco-left__img {
-  position: absolute;
-  bottom: 45px;
-  left: 77px;
-  display: flex;
+  display: none;
   @include tab {
+    position: absolute;
+    bottom: 45px;
+    left: 77px;
+    display: flex;
     bottom: 28px;
     left: 34px;
   }
@@ -232,16 +229,12 @@
 }
 
 .bio-eco__text {
-  display: block;
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.40;
-  width: 200px;
-  height: 78px;
-  color: #FFFFFF;
+  display: none;
   @include tab {
+    display: block;
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 8px;
     line-height: 1.50;
     width: 114px;
@@ -258,63 +251,22 @@
 }
 
 .bio-eco__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 20px;
-  border: none;
-  margin-top: 20px;
-  & {
-    fill: var(--text-red);
+  display: none;
+  @include tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    & {
+      fill: var(--text-red);
+    }
   }
 }
-// .bio-eco {
-//   display: none;
-//   @include tab {
-//     display: flex;
-//     // position: relative;
-//     z-index: 7;
-//   }
-//   @include desk {
-//     position: absolute;
 
-//   }
-//   &__left {
-//     @include desk {
-//       margin-right: 30px;
-//     }
-//   }
-//   &__right {
-//     width: 114px;
-//     font-size: 14px;
-//     @include desk {
-//       width: 200px;
-//       height: 78px;
-//     }
-//   }
-//   &__text {
-//     font-size: 8px;
-//     line-height: 150%;
-//     color: #ffffff;
-//     padding-top: 43px;
-//     @include desk {
-//       font-size: 14px;
-//       line-height: 140%;
-//     }
-//   }
-//   &__btn {
-//     width: 18px;
-//     height: 18px;
-//     border-radius: 9px;
-//     border: none;
-//   }
-//   &__icon {
-//     display: flex;
-//     fill: var(--text-red);
-//   }
-// }
 .hero-so-tasty {
   @include desk {
     width: 293px;
@@ -427,8 +379,14 @@
 .container-bg {
   background-image: url(/images/desktop/ellipse-desk@x1.png);
   background-repeat: no-repeat;
+  background-size: 324px 322px;
+  background-position: top 83px left 36px;
   height: 502px;
   position: relative;
+  padding-top: 6px;
+  @include mob {
+    overflow: visible;
+  }
   @include tab {
     background-size: 324px 322px;
     background-position: bottom 46px right 137px;
