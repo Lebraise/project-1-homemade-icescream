@@ -14,29 +14,11 @@
     );
   }
   @include desk {
-    z-index: 10;
     background-color: linear-gradient(
       to bottom,
       var(--gallery-gradient-color-to) 102px,
       var(--gallery-gradient-color-from) 5%
     );
-
-    // background-color: rgb(255, 255, 255);
-    // background-color: linear-gradient(
-    //   180deg,
-    //   rgba(255, 255, 255, 1) 0%,
-    //   rgba(255, 245, 246, 1) 19%,
-    //   rgba(255, 245, 246, 1) 100%
-    // );
-    // background-color: #fff5f6;
-    // background-image: url(../images/desktop/bg-pink-desk@x1_01.png),
-    //   url(../images/desktop/bg-pink-desk@x1_02.png);
-    // background-position: left 90%, right 90%;
-    // background-size: 55%;
-    // background-repeat: no-repeat;
-    // width: 100%;
-  }
-  @include desk {
     background-image: url(../images/desktop/bg-pink-desk@x1_01.png),
       url(../images/desktop/bg-pink-desk@x1_02.png);
     background-position: left 90%, right 90%;
