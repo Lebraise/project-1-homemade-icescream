@@ -1,7 +1,6 @@
 .header {
   position: relative;
   background-color: var(--product-pink);
-  // height: 100vh;
   overflow: hidden;
   &__logo {
     @include desk {
@@ -60,7 +59,7 @@
   }
   &__menu-btn {
     display: block;
-    margin-left: auto;
+    // margin-left: auto;
     margin: 0;
     padding: 0;
     border: none;
@@ -180,6 +179,7 @@
     display: flex;
     align-items: center;
     text-align: center;
+
     color: var(--text-red);
   }
 }
@@ -191,21 +191,21 @@
   left: 117px;
   bottom: 0;
   z-index: 3;
-  @include mob {
-    position: absolute;
-    width: 171px;
-    height: 410px;
-    left: 117px;
-    bottom: 0;
-    z-index: 3;
-  }
+  // @include mob {
+  //   // position: absolute;
+  //   // width: 171px;
+  //   // height: 410px;
+  //   // left: 117px;
+  //   bottom: 0;
+  //   z-index: 3;
+  // }
   @include tab {
-    position: absolute;
+    // position: absolute;
     width: 143px;
     height: 336px;
     left: 378px;
-    bottom: 0;
-    z-index: 3;
+    // bottom: 0;
+    // z-index: 3;
   }
   @include desk {
     width: 236px;
@@ -237,7 +237,6 @@
   }
   @include desk {
     bottom: 45px;
-    left: 77px;
   }
 }
 
@@ -289,7 +288,7 @@
     justify-content: center;
     width: 26px;
     height: 26px;
-    border-radius: 20px;
+    border-radius: 50%;
     border: none;
     margin-top: 20px;
     & {
@@ -319,7 +318,7 @@
       width: 293px;
       height: 232px;
       right: 109px;
-      bottom: 0;
+      // bottom: 0;
     }
   }
 }
@@ -381,16 +380,16 @@
   padding-top: 6px;
   @media screen and (min-width: 480px) {
     width: 480px;
-    background-size: 324px 322px;
-    background-position: top 83px left 36px;
-    height: 502px;
+    // background-size: 324px 322px;
+    // background-position: top 83px left 36px;
+    // height: 502px;
     overflow: hidden;
-    padding-top: 6px;
-    position: relative;
+    // padding-top: 6px;
+    // position: relative;
   }
   @include tab {
     width: 768px;
-    background-size: 324px 322px;
+    // background-size: 324px 322px;
     background-position: bottom 46px right 137px;
     height: 399px;
     overflow: hidden;
