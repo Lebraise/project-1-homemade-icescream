@@ -4,13 +4,21 @@
   overflow: hidden;
   &__logo {
     @include desk {
-      margin-right: 110px;
-      margin-left: -69px;
+      position: absolute;
+      left: 46px;
+      top: 37px;
+      // margin-right: 110px;
+      // margin-left: -69px;
     }
   }
   &__item:hover &__link,
   &__item:focus &__link {
     color: var(--text-red);
+  }
+  &__btn--wrap {
+    @include desk {
+      padding-left: 240px;
+    }
   }
   &__list {
     display: none;
@@ -27,20 +35,24 @@
     display: none;
     @include tab {
       display: block;
-      position: relative;
+      position: absolute;
       z-index: 2;
+      right: 34px;
+      top: 38px;
+      margin-left: 30px;
     }
     @include desk {
-      margin-left: auto;
+      right: 115px;
+      top: 38px;
     }
   }
   &__link {
-    // font-family: "DM Sans", sans-serif;
-    // font-style: normal;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: calc(21 / 16);
-    color: #ffffff;
+    color: var(--light-text-color);
   }
   &__item:not(:last-child) {
     margin-right: 35px;
@@ -53,9 +65,9 @@
     border: none;
     background-color: transparent;
     @include tab {
-      // margin-left: auto;
-      margin-right: 30px;
-      position: relative;
+      top: 52px;
+      right: 224px;
+      position: absolute;
       z-index: 2;
     }
     @include desk {
@@ -112,9 +124,9 @@
     }
 
     &--span {
-      // font-family: "Titan One", sans-serif;
-      // font-style: normal;
-      // font-weight: normal;
+      font-family: 'Titan One', sans-serif;
+      font-style: normal;
+      font-weight: normal;
       font-size: 48px;
       line-height: calc(48 / 46);
       letter-spacing: 0.04em;
@@ -148,25 +160,26 @@
     }
   }
   &__products--link {
-    // font-family: "DM Sans", sans-serif;
-    // font-style: normal;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
     font-weight: normal;
     font-size: 8px;
     line-height: 10px;
-    // display: flex;
-    // align-items: center;
-    // text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
     color: var(--light-text-color);
   }
   &__made--link {
-    // font-family: "DM Sans", sans-serif;
-    // font-style: normal;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
     font-weight: normal;
     font-size: 8px;
     line-height: 10px;
-    // display: flex;
-    // align-items: center;
-    // text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
     color: var(--text-red);
   }
 }
@@ -197,10 +210,10 @@
   @include desk {
     width: 236px;
     height: 557px;
-    // position: absolute;
-    // right: 32px;
-    // z-index: 3;
-    // bottom: 0;
+    position: absolute;
+    right: 32px;
+    z-index: 3;
+    bottom: 0;
     left: 594px;
   }
 }
@@ -239,6 +252,7 @@
     left: 154px;
   }
   @include desk {
+    position: absolute;
     bottom: 56px;
     left: 295px;
   }
@@ -248,9 +262,9 @@
   display: none;
   @include tab {
     display: block;
-    // font-family: "DM Sans", sans-serif;
-    // font-style: normal;
-    // font-weight: normal;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 8px;
     line-height: 1.5;
     width: 114px;
@@ -262,7 +276,7 @@
     line-height: 1.4;
     width: 200px;
     height: 78px;
-    // color: #FFFFFF;
+    color: var(--light-text-color);
   }
 }
 
@@ -378,18 +392,17 @@
     // background-size: 324px 322px;
     background-position: bottom 46px right 137px;
     height: 399px;
-    // overflow: hidden;
-    padding-top: 38px;
-    // position: relative;
+    overflow: hidden;
+    padding-top: 37px;
+    position: relative;
   }
   @include desk {
     width: 1280px;
     background-size: 531px 544px;
     background-position: bottom 69px right 274px;
     height: 665px;
-    // overflow: hidden;
-    padding-top: 38px;
-    // position: relative;
+    overflow: hidden;
+    padding-top: 50px;
   }
 }
 
