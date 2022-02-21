@@ -23,19 +23,14 @@
 .gallery__wrap {
   display: grid;
   gap: 2px;
-  grid-template-columns: repeat(7, (1 / 7));
-  grid-template-rows: repeat(9, (1 / 9));
-  margin-bottom: 80px;
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: repeat(9, auto);
   @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(7, 85px);
     gap: 4.5px;
     padding: 0 40px;
-    margin-bottom: 121px;
   }
   @media screen and (min-width: 1280px) {
-    grid-template-columns: repeat(7, 139px);
     gap: 6px;
-    margin-bottom: 123px;
     padding: 0 20px;
   }
 }
