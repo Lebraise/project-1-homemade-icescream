@@ -1,22 +1,19 @@
 .contacts {
-  background-color: #fff5f6;
-  // background-image: url(../images/mobile/bg-pink-mob@x1_01.png),
-  //   url(../images/mobile/bg-pink-mob@x1_02.png);
-  // background-position: 102px 0px, center;
-  // background-size: 55%;
-  // background-repeat: no-repeat;
-  // background-position: 50%;
+  background: linear-gradient(
+    to bottom,
+    var(--gallery-gradient-color-to) 84px,
+    var(--gallery-gradient-color-from) 5%
+  );
   width: 100%;
-  // padding-top: 84px;
-  // padding-bottom: 20px;
 
   @include tab {
-    // padding-top: 78px;
+    background: linear-gradient(
+      to bottom,
+      var(--gallery-gradient-color-to) 78px,
+      var(--gallery-gradient-color-from) 5%
+    );
   }
   @include desk {
-    background-position: left 83%, right 83%;
-    background-size: 45%, 45%;
-    background-repeat: no-repeat;
     // padding-top: 102px;
   }
 
@@ -26,12 +23,27 @@
   // }
 
   @include desk {
-    background-image: url(../images/desktop/bg-pink-desk@x1_01.png),
-      url(../images/desktop/bg-pink-desk@x1_02.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/desktop/bg-pink-desk@x2_01.png),
-        url(../images/desktop/bg-pink-desk@x2_02.png);
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(
+      to bottom,
+      var(--gallery-gradient-color-to) 102px,
+      var(--gallery-gradient-color-from) 5%
+    );
+    &:before {
+      background-position: left 83%, right 83%;
+      background-size: 50%, 50%;
+      background-repeat: no-repeat;
+      background-image: url(../images/desktop/bg-pink-desk@x1_01.png),
+        url(../images/desktop/bg-pink-desk@x1_02.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/bg-pink-desk@x2_01.png),
+          url(../images/desktop/bg-pink-desk@x2_02.png);
+      }
     }
+
+    // &::after {
+    // }
   }
 }
 .contacts__title {
@@ -76,20 +88,21 @@
   }
 }
 .contacts__item {
-  width: 100%;
+  width: 220px;
   padding: 43px 21px 43px 20px;
   background-color: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  margin-top: -84px;
+  // margin-top: -84px;
+  &:not(:last-child) {
+    // margin-bottom: 104px;
+    margin-bottom: 20px;
+  }
   @include mob {
-    &:not(:last-child) {
-      margin-bottom: 104px;
-    }
   }
 
   @include tab {
-    margin-top: -78px;
+    // margin-top: -78px;
     padding: 50px 32px;
     // height: 544px;
     width: calc(100% / 3 - 20px);
@@ -99,7 +112,7 @@
     }
   }
   @include desk {
-    margin-top: -102px;
+    // margin-top: -102px;
     padding: 51px 44px 62px 43px;
     height: 572px;
     width: calc(100% / 3 - 30px);
