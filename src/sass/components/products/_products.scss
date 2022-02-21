@@ -3,6 +3,9 @@
   padding-bottom: 100px;
   text-align: center;
 }
+.products__item-box--picture {
+  display: inline-block;
+}
 
 .products__text {
   font-family: Titan One, sans-serif;
@@ -56,11 +59,21 @@
     background-color: var(--product-green);
   }
 }
+.btn__list-item--link {
+  border: none;
+  // background-image: ('./images/mobile/arrow-products-mob@x1.png');
+  // border-radius: 50px;
+  background-color: transparent;
+}
 
 .products__list {
   padding-top: 145px;
   &-item--link {
     display: inline-block;
+    @media screen and (min-width: 320px) {
+      width: 40px;
+      height: 40px;
+    }
   }
   &-item--box {
     position: absolute;
@@ -93,9 +106,9 @@
   }
 }
 
-.products__list-item--item {
+.products__list-item {
   border: 1px transparent solid;
-  border-radius: 50px;
+  border-radius: 24px;
 }
 
 @media screen and (max-width: 767px) {
