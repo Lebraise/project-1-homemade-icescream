@@ -46,7 +46,7 @@
           maximus. Cras massa nibh, tincidunt.
         </p>
         <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
-        <button about-modal-open type="button" class="btn about__button--width">
+        <button type="button" class="btn about__button--width" data-about-open>
           Read more
           <svg class="about__btn-icon" width="12" height="12">
             <use href="./images/icon.svg#icon-on-button"></use>
@@ -58,9 +58,9 @@
 </section>
 
 <!-- Modal window -->
-<div class="container backdrop is-hidden" about-modal>
+<div class="container backdrop is-hidden" data-about>
   <div class="about-modal">
-    <button about-modal-close type="button" class="about__modal-button">
+    <button type="button" class="about__modal-button" data-about-close>
       <svg class="modal__icon" width="14" height="14">
         <use href="./images/icon.svg#icon-close"></use>
       </svg>
