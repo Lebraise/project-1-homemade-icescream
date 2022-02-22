@@ -96,6 +96,9 @@
     width: 73px;
     height: 28px;
     line-height: 28px;
+    margin-bottom: 30px;
+  }
+  @include desk {
     margin-bottom: 32px;
   }
   &-cafe {
@@ -145,6 +148,28 @@
   }
 }
 
+.schedule__list {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  margin-bottom: 25px;
+
+  border-top: 1px solid var(--contacts-bottom-color);
+  border-bottom: 1px solid var(--contacts-bottom-color);
+  @include tab {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    margin-bottom: 30px;
+  }
+  @include desk {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    margin-bottom: 32px;
+  }
+}
+
 .schedule__weekday {
   margin-bottom: 10px;
 }
@@ -153,20 +178,11 @@
   font-size: 12px;
   line-height: 1.86;
   color: var(--accent-pink);
-  &:last-child {
-    margin-bottom: 25px;
-  }
   @include tab {
     font-size: 14px;
-    &:last-child {
-      margin-bottom: 30px;
-    }
   }
   @include desk {
     font-size: 16px;
-    &:last-child {
-      margin-bottom: 32px;
-    }
   }
 }
 
@@ -189,7 +205,6 @@
 .contacts__item-wrap {
   margin-bottom: 25px;
   // padding-bottom: 25px;
-  border-bottom: 1px solid var(--contacts-bottom-color);
 
   @include tab {
     margin-bottom: 30px;

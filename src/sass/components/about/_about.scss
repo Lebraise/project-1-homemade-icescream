@@ -3,31 +3,31 @@
   background-image: url(../images/mobile/bg-milk-mob@x1_01.png),
     url(../images/mobile/bg-milk-mob@x1_02.png);
   background-position: left 90%, right 90%;
-  background-size: 55%;
   background-repeat: no-repeat;
-  width: 100%;
+  background-size: 50%;
   padding-top: 125px;
   padding-bottom: 20px;
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    background-image: none;
-  }
-  @include desk {
-    background-position: left 83%, right 83%;
-    background-size: 45%, 45%;
-  }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/mobile/bg-milk-mob@x2_01.png),
       url(../images/mobile/bg-milk-mob@x2_02.png);
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: none;
+  }
   @include desk {
     background-image: url(../images/desktop/bg-milk-desk@x1_01.png),
       url(../images/desktop/bg-milk-desk@x1_02.png);
+    background-position: left 97%, right 97%;
+    background-repeat: no-repeat;
+    background-size: inherit;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/desktop/bg-milk-desk@x2_01.png),
         url(../images/desktop/bg-milk-desk@x2_02.png);
+      background-size: 45%;
+      background-position: left 97%, right 97%;
+      background-repeat: no-repeat;
     }
   }
 }
