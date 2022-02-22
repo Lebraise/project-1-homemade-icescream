@@ -1,6 +1,8 @@
+.another-container{
+  background-color: var(--product-pink);
+}
 .hero-top {
   position: relative;
-  background-color: var(--product-pink);
   overflow: hidden;
   &__wrap {
     display: flex;
@@ -410,7 +412,8 @@
   background-repeat: no-repeat;
   background-size: 324px 322px;
   background-position: top 83px left 36px;
-  height: 502px;
+  // height: 502px;
+  padding-bottom: 150px;
   position: relative;
   padding-top: 6px;
   @media screen and (min-width: 480px) {
@@ -426,7 +429,7 @@
     width: 768px;
     // background-size: 324px 322px;
     background-position: bottom 46px right 137px;
-    height: 399px;
+    // height: 399px;
     overflow: hidden;
     padding-top: 37px;
     position: relative;
@@ -435,7 +438,7 @@
     width: 1280px;
     background-size: 531px 544px;
     background-position: bottom 69px right 274px;
-    height: 665px;
+    padding-bottom: 250px;
     overflow: hidden;
     padding-top: 50px;
   }
