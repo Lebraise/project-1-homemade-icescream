@@ -132,12 +132,15 @@
   letter-spacing: 0.02em;
   color: var(--text-gray);
   margin-top: 10px;
+  margin-bottom: 25px;
   @include tab {
     margin-top: 14px;
+    margin-bottom: 30px;
     font-size: 14px;
   }
   @include desk {
     margin-top: 10px;
+    margin-bottom: 32px;
     font-size: 16px;
   }
 }
@@ -150,11 +153,20 @@
   font-size: 12px;
   line-height: 1.86;
   color: var(--accent-pink);
+  &:last-child {
+    margin-bottom: 25px;
+  }
   @include tab {
     font-size: 14px;
+    &:last-child {
+      margin-bottom: 30px;
+    }
   }
   @include desk {
     font-size: 16px;
+    &:last-child {
+      margin-bottom: 32px;
+    }
   }
 }
 
@@ -176,16 +188,16 @@
 
 .contacts__item-wrap {
   margin-bottom: 25px;
-  padding-bottom: 25px;
+  // padding-bottom: 25px;
   border-bottom: 1px solid var(--contacts-bottom-color);
 
   @include tab {
     margin-bottom: 30px;
-    padding-bottom: 30px;
+    // padding-bottom: 30px;
   }
   @include desk {
     margin-bottom: 32px;
-    padding-bottom: 32px;
+    // padding-bottom: 32px;
   }
 }
 
@@ -212,7 +224,13 @@
   font-size: 16px;
   line-height: 1.31;
 }
-
+.contacts__btn-item {
+  @include tab {
+    &:not(:last-child) {
+      margin-right: 14.5px;
+    }
+  }
+}
 .location__btn {
   background: var(--text-red);
   color: var(--light-text-color);
@@ -220,7 +238,6 @@
     margin-bottom: 10px;
   }
   @include tab {
-    margin-right: 14.5px;
     width: 191px;
   }
 
