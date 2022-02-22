@@ -2,14 +2,14 @@
   background-color: #fff5f6;
   background: url(../images/mobile/bg-milk-mob@x1_01.png) left 90% no-repeat,
     url(../images/mobile/bg-milk-mob@x1_02.png) right 90% no-repeat;
-  background-size: 43%;
+  background-size: 50%;
   padding-top: 125px;
   padding-bottom: 20px;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/mobile/bg-milk-mob@x2_01.png),
       url(../images/mobile/bg-milk-mob@x2_02.png);
-    background-size: 43%;
+    background-size: 50%;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
