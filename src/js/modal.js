@@ -2,7 +2,6 @@ var modal = document.getElementById('orderBtn');
 var btnhead = document.getElementById('orderBtnHead');
 var btnmob = document.getElementById('orderBtnMob');
 var btnabout = document.getElementById('orderBtnAbout');
-var datamenu = document.getElementById('datamenu');
 var btnclose = document.getElementsByClassName('close')[0];
 btnclose.onclick = function () {
   modal.style.display = 'none';
