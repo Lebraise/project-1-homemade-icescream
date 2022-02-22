@@ -65,8 +65,20 @@
       line-height: 2.55;
       text-align: center;
       color: #000000;
-      text-decoration: underline 1px solid #e1e1e1;
-      text-underline-offset: 8px;
+      background: repeating-linear-gradient(
+        rgba(250, 250, 250, 0),
+        rgba(250, 250, 250, 0) 29px,
+        #e1e1e1 29px,
+        #e1e1e1 30px
+      );
+      @media screen and (min-width: 768px) {
+        background: repeating-linear-gradient(
+          rgba(250, 250, 250, 0),
+          rgba(250, 250, 250, 0) 28px,
+          #e1e1e1 28px,
+          #e1e1e1 29px
+        );
+      }
       &::before {
         position: absolute;
         content: '';
