@@ -6,9 +6,6 @@ var btnclose = document.getElementsByClassName('close')[0];
 btnclose.onclick = function () {
   modal.style.display = 'none';
 };
-modal.onclick = function() {
-  datamenu.style.display = "none";
-}
 function orderBtn() {
   modal.style.display = 'block';
 }
