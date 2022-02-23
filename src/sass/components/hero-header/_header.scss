@@ -18,6 +18,17 @@
     }
   }
   &__logo {
+    display: flex;
+    align-items: center;
+    &-text {
+      font-family: 'Titan One', sans serif;
+      font-size: 28px;
+      line-height: 1.15;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text-red);
+      margin-left: 10px;
+    }
     @include desk {
       position: absolute;
       left: 46px;
