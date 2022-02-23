@@ -131,6 +131,10 @@
       &-red {
         background-color: var(--text-red);
         color: var(--light-text-color);
+        &:hover, &:focus {
+          background-color: #C7133E;
+          color: #ffffff;
+        }
       }
     }
   }
