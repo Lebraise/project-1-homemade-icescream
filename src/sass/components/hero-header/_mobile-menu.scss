@@ -26,7 +26,8 @@
   padding-top: 60px;
   background-color: var(--mob-menu-bg-color);
   z-index: 9;
-  transition: top 250ms var(--transition), opacity var(--transition), visibility var(--transition);
+  transform: translateX(0);
+  transition: transform var(--transition), opacity var(--transition), visibility var(--transition);
 
   @include tab {
     width: 45vw;
@@ -49,7 +50,7 @@
   }
 }
 
-.backdrop.mob-menu .is-hidden  {
+.backdrop.mob-menu .is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -60,7 +61,7 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  top: -100%;
+  transform: translateX(100%);
 }
 
 .container__mob-menu {
