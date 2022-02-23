@@ -92,7 +92,7 @@
   }
 
   &__link {
-    transition: color var(--transition);
+    transition: color var(--transition), text-shadow var(--transition);
     &:hover,
     &:focus {
       color: var(--text-red);

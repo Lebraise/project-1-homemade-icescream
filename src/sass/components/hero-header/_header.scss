@@ -1,4 +1,4 @@
-.another-container{
+.another-container {
   background-color: var(--product-pink);
 }
 .hero-top {
@@ -26,11 +26,16 @@
       // margin-left: -69px;
     }
   }
-  &__item:hover &__link,
-  &__item:focus &__link {
-    color: var(--text-red);
-  }
-  // &__btn--wrap {
+
+  // &__item &__link,
+  // &__item &__link {
+  //   transition: color var(--text-red);
+  // }
+  // &__item:hover &__link,
+  // &__item:focus &__link {
+  //   color: var(--text-red);
+  // }
+  // // &__btn--wrap {
   //   // margin-bottom: 137px;
   //   // @include tab {
   //   //   margin-bottom: 15px;
@@ -75,6 +80,12 @@
     color: var(--light-text-color);
     padding-top: 10px;
     padding-bottom: 10px;
+    transition: color var(--transition), text-shadow var(--transition);
+    &:hover,
+    &:focus {
+      color: var(--text-red);
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
   }
   &__item:not(:last-child) {
     margin-right: 35px;
@@ -131,8 +142,9 @@
       &-red {
         background-color: var(--text-red);
         color: var(--light-text-color);
-        &:hover, &:focus {
-          background-color: #C7133E;
+        &:hover,
+        &:focus {
+          background-color: #c7133e;
           color: #ffffff;
         }
       }
@@ -329,7 +341,7 @@
     border: none;
     margin-top: 20px;
     background-color: #ffffff;
-    transition: var(--transition);
+    transition: background-color var(--transition), fill var(--transition);
     &:hover,
     &:focus {
       background-color: var(--text-red);
