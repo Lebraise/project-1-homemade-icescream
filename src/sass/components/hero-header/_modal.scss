@@ -37,8 +37,8 @@
     font-family: "Titan One", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 18px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: center;
@@ -47,12 +47,18 @@
     margin-right: 40px;
     margin-top: 10px;
     @include mob {
+        font-size: 18px;
+        line-height: 21px;
         margin-top: 20px;
     }
     @include tab {
+        font-size: 22px;
+        line-height: 25px;
         margin-top: 30px;
     }
     @include desk {
+        font-size: 22px;
+        line-height: 25px;
         margin-top: 40px;
     }
     
