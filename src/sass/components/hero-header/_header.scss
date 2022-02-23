@@ -328,9 +328,11 @@
     border-radius: 50%;
     border: none;
     margin-top: 20px;
+    background-color: #ffffff;
     &:hover,
     &:focus {
-      background-color: var(--btn-active-bg-color);
+      background-color: var(--text-red);
+      fill: #ffffff;
     }
     & {
       fill: var(--text-red);
