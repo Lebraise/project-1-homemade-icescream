@@ -30,16 +30,16 @@
   &__item:focus &__link {
     color: var(--text-red);
   }
-  &__btn--wrap {
-    // margin-bottom: 137px;
-    // @include tab {
-    //   margin-bottom: 15px;
-    // }
-    // @include desk {
-    //   margin-left: 240px;
-    // margin-bottom: 84px;
-    // }
-  }
+  // &__btn--wrap {
+  //   // margin-bottom: 137px;
+  //   // @include tab {
+  //   //   margin-bottom: 15px;
+  //   // }
+  //   // @include desk {
+  //   //   margin-left: 240px;
+  //   // margin-bottom: 84px;
+  //   // }
+  // }
   &__list {
     display: none;
     @include desk {
@@ -229,6 +229,9 @@
   //   bottom: 0;
   //   z-index: 3;
   // }
+  @include mob {
+    left: 160px;
+  }
   @include tab {
     // position: absolute;
     width: 143px;
@@ -248,12 +251,12 @@
   }
 }
 
-.hero-wrap__right {
-  // display: none;
-  // @include tab {
-  //   display: block;
-  // }
-}
+// .hero-wrap__right {
+//   // display: none;
+//   // @include tab {
+//   //   display: block;
+//   // }
+// }
 
 .bio-eco-left__img {
   display: none;
@@ -419,7 +422,7 @@
   @media screen and (min-width: 480px) {
     width: 480px;
     // background-size: 324px 322px;
-    // background-position: top 83px left 36px;
+    background-position: top 83px left 83px;
     // height: 502px;
     overflow: hidden;
     // padding-top: 6px;
