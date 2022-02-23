@@ -43,9 +43,20 @@
     text-transform: uppercase;
     text-align: center;
     color: #FFFFFF;
-    margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
+    margin-top: 10px;
+    @include mob {
+        margin-top: 20px;
+    }
+    @include tab {
+        margin-top: 30px;
+    }
+    @include desk {
+        margin-top: 40px;
+    }
+    
+    
     
 }
 
