@@ -151,21 +151,17 @@
 .schedule__list {
   padding-top: 25px;
   padding-bottom: 25px;
-
   margin-bottom: 25px;
-
   border-top: 1px solid var(--contacts-bottom-color);
   border-bottom: 1px solid var(--contacts-bottom-color);
   @include tab {
     padding-top: 30px;
     padding-bottom: 30px;
-
     margin-bottom: 30px;
   }
   @include desk {
     padding-top: 32px;
     padding-bottom: 32px;
-
     margin-bottom: 32px;
   }
 }
@@ -249,6 +245,7 @@
 .location__btn {
   background: var(--text-red);
   color: var(--light-text-color);
+  transition: var(--transition);
   @media screen and (max-width: 767px) {
     margin-bottom: 10px;
   }
@@ -268,6 +265,7 @@
   border: 2px solid transparent;
   color: var(--contacts-btn-color);
   background-color: var(--light-text-color);
+  transition: var(--transition);
   &:hover,
   &:focus {
     background-color: var(--btn-active-bg-color);
