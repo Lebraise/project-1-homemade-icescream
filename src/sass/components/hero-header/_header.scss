@@ -329,6 +329,7 @@
     border: none;
     margin-top: 20px;
     background-color: #ffffff;
+    transition: var(--transition);
     &:hover,
     &:focus {
       background-color: var(--text-red);
